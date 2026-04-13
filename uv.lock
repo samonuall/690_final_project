@@ -15,11 +15,17 @@ name = "690-final-project"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "gymnasium" },
+    { name = "pycolab" },
     { name = "stable-baselines3" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "stable-baselines3", specifier = ">=2.8.0" }]
+requires-dist = [
+    { name = "gymnasium", specifier = ">=1.2.3" },
+    { name = "pycolab", specifier = ">=1.2" },
+    { name = "stable-baselines3", specifier = ">=2.8.0" },
+]
 
 [[package]]
 name = "cloudpickle"
@@ -939,6 +945,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c3/28/ec0fc38107fc32536908034e990c47914c57cd7c5a3ece4d8d8f7ffd7e27/pillow-12.2.0-pp311-pypy311_pp73-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4a6c9fa44005fa37a91ebfc95d081e8079757d2e904b27103f4f5fa6f0bf78c0", size = 5355404, upload-time = "2026-04-01T14:46:06.33Z" },
     { url = "https://files.pythonhosted.org/packages/5e/8b/51b0eddcfa2180d60e41f06bd6d0a62202b20b59c68f5a132e615b75aecf/pillow-12.2.0-pp311-pypy311_pp73-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:25373b66e0dd5905ed63fa3cae13c82fbddf3079f2c8bf15c6fb6a35586324c1", size = 6002215, upload-time = "2026-04-01T14:46:08.83Z" },
     { url = "https://files.pythonhosted.org/packages/bc/60/5382c03e1970de634027cee8e1b7d39776b778b81812aaf45b694dfe9e28/pillow-12.2.0-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:bfa9c230d2fe991bed5318a5f119bd6780cda2915cca595393649fc118ab895e", size = 7080946, upload-time = "2026-04-01T14:46:11.734Z" },
+]
+
+[[package]]
+name = "pycolab"
+version = "1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/21/72/205ce743700b47a2194d75a49517db9a8cd3b1af97ccd96e4d99b545596f/pycolab-1.2.tar.gz", hash = "sha256:18e9e006040d77ec9fc414b3ae35e0d712010046c3d00005d8ff4094b3d88010", size = 124486, upload-time = "2018-10-22T22:58:05.9Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/6c/aa23f61a1aa6be0b53765ff5edae59db8fcc6b98952a41abe6de8982eaa3/pycolab-1.2-py3-none-any.whl", hash = "sha256:a8577a5bc8135358da5f07f1a1e51c7716647481cd59d46ec20f4df6e65689a7", size = 165651, upload-time = "2018-10-22T22:58:04.403Z" },
 ]
 
 [[package]]

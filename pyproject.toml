@@ -5,5 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "gymnasium>=1.2.3",
+    "pycolab>=1.2",
     "stable-baselines3>=2.8.0",
 ]
