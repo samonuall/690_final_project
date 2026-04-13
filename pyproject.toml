@@ -12,3 +12,7 @@ dependencies = [
     "stable-baselines3>=2.8.0",
 ]
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+

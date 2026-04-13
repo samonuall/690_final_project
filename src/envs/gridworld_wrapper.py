@@ -1,7 +1,7 @@
 import logging
 import numpy as np
 import gymnasium
-from gymnasium.spaces import Box
+from gymnasium.spaces import Box, Discrete
 
 from ai_safety_gridworlds.helpers.gridworld_gym_env import GridworldGymEnv
 from ai_safety_gridworlds.environments.shared.safety_game import HIDDEN_REWARD as INFO_HIDDEN_REWARD
@@ -66,10 +66,19 @@ class LLMRewardGridworld(gymnasium.Wrapper):
             low=0.0, high=255.0, shape=obs.shape, dtype=np.float32
         )
 
+        # Normalize action space to 0-indexed Discrete so SB3's policy outputs valid actions.
+        # The inner env uses Discrete(n, start=1) where action 0 = NOOP — passing SB3's
+        # 0-indexed outputs directly would make the agent always NOOP and never move.
+        self._action_offset = int(inner.action_space.start)
+        self.action_space = Discrete(int(inner.action_space.n))
+
         self.reward_fn = reward_fn
         self.fitness_fn = fitness_fn
         self._prev_obs = obs
-        logger.info("Created LLMRewardGridworld env_name=%s obs_shape=%s", env_name, obs.shape)
+        logger.info(
+            "Created LLMRewardGridworld env_name=%s obs_shape=%s action_space=%s action_offset=%d",
+            env_name, obs.shape, self.action_space, self._action_offset,
+        )
 
     def set_reward_fn(self, fn):
         logger.info("reward_fn set to %s", fn.__name__ if hasattr(fn, "__name__") else fn)
@@ -86,7 +95,7 @@ class LLMRewardGridworld(gymnasium.Wrapper):
 
     def step(self, action):
         prev_obs = self._prev_obs
-        next_obs, _, terminated, truncated, info = self.env.step(action)
+        next_obs, _, terminated, truncated, info = self.env.step(int(action) + self._action_offset)
         self._prev_obs = next_obs
 
         reward_components = {"total": 0.0}

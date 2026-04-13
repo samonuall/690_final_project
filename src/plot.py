@@ -20,9 +20,10 @@ def _load_logs(log_dir):
 def plot_training(log_dir):
     """
     Reads all training_log.json files under log_dir and produces:
-      1. fitness_over_training.png  — mean fitness per eval step, one line per run
-      2. fitness_vs_reward.png      — mean fitness vs mean reward total per eval step
-      3. lava_train_vs_test.png     — bar chart (only if a 'test' subdir with is_testing data exists)
+      1. fitness_over_training.png      — mean eval fitness per checkpoint, one line per run
+      2. fitness_vs_reward.png          — mean eval fitness vs mean eval reward per checkpoint
+      3. cumulative_reward_fitness.png  — cumulative training-time reward and fitness over steps
+      4. lava_train_vs_test.png         — bar chart (only if train + test subdirs both exist)
 
     Plots saved to {log_dir}/plots/.
     """
@@ -35,7 +36,7 @@ def plot_training(log_dir):
     os.makedirs(plots_dir, exist_ok=True)
 
     # ------------------------------------------------------------------
-    # Plot 1: Mean fitness over training steps
+    # Plot 1: Mean eval fitness over training steps
     # ------------------------------------------------------------------
     fig, ax = plt.subplots()
     for label, log in logs:
@@ -43,14 +44,14 @@ def plot_training(log_dir):
         mean_fitness = [np.mean([ep["fitness"] for ep in e["episodes"]]) for e in log["entries"]]
         ax.plot(steps, mean_fitness, label=label)
     ax.set_xlabel("Training steps")
-    ax.set_ylabel("Mean episode fitness")
+    ax.set_ylabel("Mean episode fitness (eval)")
     ax.set_title("Fitness over training")
     ax.legend()
     fig.savefig(os.path.join(plots_dir, "fitness_over_training.png"), bbox_inches="tight")
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 2: Fitness vs reward total over training steps
+    # Plot 2: Eval fitness vs eval reward total over training steps
     # ------------------------------------------------------------------
     fig, ax = plt.subplots()
     for label, log in logs:
@@ -63,14 +64,38 @@ def plot_training(log_dir):
         ax.plot(steps, mean_fitness, label=f"{label} fitness")
         ax.plot(steps, mean_reward, linestyle="--", label=f"{label} reward total")
     ax.set_xlabel("Training steps")
-    ax.set_ylabel("Mean episode value")
+    ax.set_ylabel("Mean episode value (eval)")
     ax.set_title("Fitness vs reward total over training")
     ax.legend()
     fig.savefig(os.path.join(plots_dir, "fitness_vs_reward.png"), bbox_inches="tight")
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 3: Lava train vs test bar chart
+    # Plot 3: Cumulative training-time reward and fitness over steps
+    # Shows the actual signal the agent received during training, not eval.
+    # ------------------------------------------------------------------
+    has_cumulative = any(
+        "cumulative_training_reward" in e
+        for _, log in logs
+        for e in log["entries"]
+    )
+    if has_cumulative:
+        fig, ax = plt.subplots()
+        for label, log in logs:
+            steps = [e["step"] for e in log["entries"]]
+            cum_reward = [e.get("cumulative_training_reward", 0.0) for e in log["entries"]]
+            cum_fitness = [e.get("cumulative_training_fitness", 0.0) for e in log["entries"]]
+            ax.plot(steps, cum_fitness, label=f"{label} cum. fitness")
+            ax.plot(steps, cum_reward, linestyle="--", label=f"{label} cum. reward")
+        ax.set_xlabel("Training steps")
+        ax.set_ylabel("Cumulative value (training)")
+        ax.set_title("Cumulative training reward vs fitness")
+        ax.legend()
+        fig.savefig(os.path.join(plots_dir, "cumulative_reward_fitness.png"), bbox_inches="tight")
+        plt.close(fig)
+
+    # ------------------------------------------------------------------
+    # Plot 4: Lava train vs test bar chart
     # Expects separate logs labelled 'train' and 'test' (or containing those strings)
     # ------------------------------------------------------------------
     train_logs = [(l, d) for l, d in logs if "train" in l]

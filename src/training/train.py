@@ -18,12 +18,23 @@ class _EvalCallback(BaseCallback):
         self._log = log  # shared list, mutated in-place
         self._total_timesteps = total_timesteps
         self._log_freq = max(1, total_timesteps // 10)  # progress log every ~10%
+        # Running totals accumulated during training steps (not eval rollouts)
+        self._cum_training_reward = 0.0
+        self._cum_training_fitness = 0.0
 
     def _on_step(self):
         if self.n_calls % self._log_freq == 0:
             pct = 100 * self.num_timesteps / self._total_timesteps
             logger.info("Training progress: %d/%d steps (%.0f%%)",
                         self.num_timesteps, self._total_timesteps, pct)
+
+        # Accumulate per-step reward and fitness from the live training batch
+        rewards = self.locals.get("rewards", [])
+        infos = self.locals.get("infos", [{}])
+        self._cum_training_reward += float(np.sum(rewards)) if len(rewards) else 0.0
+        self._cum_training_fitness += sum(
+            float(info.get("fitness", 0.0)) for info in infos
+        )
 
         if self.n_calls % self._eval_freq != 0:
             return True
@@ -48,13 +59,22 @@ class _EvalCallback(BaseCallback):
 
             episodes.append({"reward_components": ep_components, "fitness": ep_fitness})
 
-        self._log.append({"step": self.num_timesteps, "episodes": episodes})
+        self._log.append({
+            "step": self.num_timesteps,
+            "episodes": episodes,
+            "cumulative_training_reward": self._cum_training_reward,
+            "cumulative_training_fitness": self._cum_training_fitness,
+        })
         self.model.policy.set_training_mode(True)
 
         mean_fitness = np.mean([ep["fitness"] for ep in episodes])
         mean_reward = np.mean([ep["reward_components"].get("total", 0.0) for ep in episodes])
-        logger.info("eval step=%d  mean_fitness=%.3f  mean_reward_total=%.3f",
-                    self.num_timesteps, mean_fitness, mean_reward)
+        logger.info(
+            "eval step=%d  mean_fitness=%.3f  mean_reward_total=%.3f  "
+            "cum_training_fitness=%.3f  cum_training_reward=%.3f",
+            self.num_timesteps, mean_fitness, mean_reward,
+            self._cum_training_fitness, self._cum_training_reward,
+        )
         return True
 
 
@@ -81,12 +101,11 @@ def train_ppo(env, reward_fn, fitness_fn, cfg, output_dir):
 
     logger.info(
         "Starting PPO training: total_timesteps=%d  eval_freq=%d  eval_episodes=%d  "
-        "net_arch=%s  lr=%s  seed=%d  output_dir=%s",
+        "net_arch=%s  lr=%s  gamma=%s  seed=%d  output_dir=%s",
         ppo_cfg["total_timesteps"], ppo_cfg["eval_freq"], ppo_cfg["eval_episodes"],
-        ppo_cfg["net_arch"], ppo_cfg["learning_rate"], seed, output_dir,
+        ppo_cfg["net_arch"], ppo_cfg["learning_rate"], ppo_cfg.get("gamma", 0.99),
+        seed, output_dir,
     )
-
-    policy_kwargs = dict(net_arch=ppo_cfg["net_arch"])
 
     model = PPO(
         "MlpPolicy",
@@ -94,7 +113,8 @@ def train_ppo(env, reward_fn, fitness_fn, cfg, output_dir):
         learning_rate=ppo_cfg["learning_rate"],
         n_steps=ppo_cfg["n_steps"],
         batch_size=ppo_cfg["batch_size"],
-        policy_kwargs=policy_kwargs,
+        gamma=ppo_cfg.get("gamma", 0.99),
+        policy_kwargs=dict(net_arch=ppo_cfg["net_arch"]),
         seed=seed,
         verbose=0,
     )

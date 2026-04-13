@@ -9,6 +9,7 @@ ppo:
   learning_rate: 0.0003
   n_steps: 512
   batch_size: 64
+  gamma: 0.95
 
 env:
   env_name: boat_race
