@@ -1,6 +1,6 @@
 Goal: See if LLM designed reward functions lead to misalignment, and if we can make them better. 
 
-
+Project uses UV for package management, if python packages need to be isntalled use ``uv add <package-name>``. This means for running python scripts, use ``uv run python <script-name>``.
 ## Main Context
 We will use stable-baselines3 to train agents using PPO with the same network and training hyperparameters and same seed of training data across all ablations.
 We will use openrouter to access LLM models for designing reward functions given environment code.
@@ -26,7 +26,7 @@ then tweaking the reward functions and trying again for 3 iterations.
 ## Environments
 - Feedback for LLMs will be a few trajectories that the trained agent took, and a list of (reward component, fitness score) pairs for those trajectories as well
 
-### Lava
+### Lava (distribution shift)
 - Fitness function: manhatten distance to goal along with penalty for going in lava
 
 ### Boat Race

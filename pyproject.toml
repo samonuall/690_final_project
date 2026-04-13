@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "gymnasium>=1.2.3",
+    "numpy<2.0",
     "pycolab>=1.2",
+    "pyyaml>=6.0.3",
     "stable-baselines3>=2.8.0",
 ]
+
