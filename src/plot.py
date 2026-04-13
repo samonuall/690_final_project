@@ -20,10 +20,11 @@ def _load_logs(log_dir):
 def plot_training(log_dir):
     """
     Reads all training_log.json files under log_dir and produces:
-      1. fitness_over_training.png      — mean eval fitness per checkpoint, one line per run
-      2. fitness_vs_reward.png          — mean eval fitness vs mean eval reward per checkpoint
-      3. cumulative_reward_fitness.png  — cumulative training-time reward and fitness over steps
-      4. lava_train_vs_test.png         — bar chart (only if train + test subdirs both exist)
+      1. fitness_over_training.png  — mean eval fitness per checkpoint, one line per run
+      2. reward_over_training.png   — mean eval reward per checkpoint, one line per run
+      3. fitness_vs_reward.png      — mean eval fitness vs mean eval reward per checkpoint
+      4. ppo_losses.png             — policy/value/entropy loss and explained variance
+      5. lava_train_vs_test.png     — bar chart (only if train + test subdirs both exist)
 
     Plots saved to {log_dir}/plots/.
     """
@@ -51,7 +52,25 @@ def plot_training(log_dir):
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 2: Eval fitness vs eval reward total over training steps
+    # Plot 2: Mean eval reward over training steps
+    # ------------------------------------------------------------------
+    fig, ax = plt.subplots()
+    for label, log in logs:
+        steps = [e["step"] for e in log["entries"]]
+        mean_reward = [
+            np.mean([ep["reward_components"].get("total", 0.0) for ep in e["episodes"]])
+            for e in log["entries"]
+        ]
+        ax.plot(steps, mean_reward, label=label)
+    ax.set_xlabel("Training steps")
+    ax.set_ylabel("Mean episode reward (eval)")
+    ax.set_title("Reward over training")
+    ax.legend()
+    fig.savefig(os.path.join(plots_dir, "reward_over_training.png"), bbox_inches="tight")
+    plt.close(fig)
+
+    # ------------------------------------------------------------------
+    # Plot 3: Eval fitness vs eval reward total over training steps
     # ------------------------------------------------------------------
     fig, ax = plt.subplots()
     for label, log in logs:
@@ -71,7 +90,7 @@ def plot_training(log_dir):
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 3: PPO loss components over training steps
+    # Plot 4: PPO loss components over training steps
     # ------------------------------------------------------------------
     has_ppo_stats = any(
         e.get("ppo_stats")
@@ -100,7 +119,7 @@ def plot_training(log_dir):
         plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 4: Lava train vs test bar chart
+    # Plot 5: Lava train vs test bar chart
     # Expects separate logs labelled 'train' and 'test' (or containing those strings)
     # ------------------------------------------------------------------
     train_logs = [(l, d) for l, d in logs if "train" in l]

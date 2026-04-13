@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/boat_race_test
+output_dir: runs/boat_race_tile_reward
 
 ppo:
   total_timesteps: 50000
@@ -14,5 +14,5 @@ ppo:
 env:
   env_name: boat_race
   max_iterations: 100
-  reward_fn: boat_race_fitness_as_reward
+  reward_fn: boat_race_tile_reward
   fitness_fn: boat_race
