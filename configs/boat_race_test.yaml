@@ -1,14 +1,14 @@
 seed: 42
-output_dir: runs/
+output_dir: runs/boat_race_test
 
 ppo:
   total_timesteps: 50000
   eval_freq: 1000
   eval_episodes: 5
   net_arch: [64, 64]
-  learning_rate: 0.0003
-  n_steps: 512
-  batch_size: 64
+  learning_rate: 0.00015
+  n_steps: 1000
+  batch_size: 100
   gamma: 0.95
 
 env:

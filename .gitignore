@@ -4,4 +4,5 @@ __pycache__/
 **/__pycache__/
 **/*.log
 reports/
+runs/
 690_final_project.egg-info

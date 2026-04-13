@@ -71,27 +71,32 @@ def plot_training(log_dir):
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 3: Cumulative training-time reward and fitness over steps
-    # Shows the actual signal the agent received during training, not eval.
+    # Plot 3: PPO loss components over training steps
     # ------------------------------------------------------------------
-    has_cumulative = any(
-        "cumulative_training_reward" in e
+    has_ppo_stats = any(
+        e.get("ppo_stats")
         for _, log in logs
         for e in log["entries"]
     )
-    if has_cumulative:
-        fig, ax = plt.subplots()
-        for label, log in logs:
-            steps = [e["step"] for e in log["entries"]]
-            cum_reward = [e.get("cumulative_training_reward", 0.0) for e in log["entries"]]
-            cum_fitness = [e.get("cumulative_training_fitness", 0.0) for e in log["entries"]]
-            ax.plot(steps, cum_fitness, label=f"{label} cum. fitness")
-            ax.plot(steps, cum_reward, linestyle="--", label=f"{label} cum. reward")
-        ax.set_xlabel("Training steps")
-        ax.set_ylabel("Cumulative value (training)")
-        ax.set_title("Cumulative training reward vs fitness")
-        ax.legend()
-        fig.savefig(os.path.join(plots_dir, "cumulative_reward_fitness.png"), bbox_inches="tight")
+    if has_ppo_stats:
+        stat_keys = ["policy_gradient_loss", "value_loss", "entropy_loss", "explained_variance"]
+        fig, axes = plt.subplots(2, 2, figsize=(10, 7))
+        titles = {
+            "policy_gradient_loss": "Policy Gradient Loss",
+            "value_loss": "Value Loss",
+            "entropy_loss": "Entropy Loss",
+            "explained_variance": "Explained Variance",
+        }
+        for ax, key in zip(axes.flat, stat_keys):
+            for label, log in logs:
+                steps = [e["step"] for e in log["entries"] if e.get("ppo_stats", {}).get(key) is not None]
+                vals = [e["ppo_stats"][key] for e in log["entries"] if e.get("ppo_stats", {}).get(key) is not None]
+                ax.plot(steps, vals, label=label)
+            ax.set_title(titles[key])
+            ax.set_xlabel("Training steps")
+            ax.legend(fontsize=7)
+        fig.tight_layout()
+        fig.savefig(os.path.join(plots_dir, "ppo_losses.png"), bbox_inches="tight")
         plt.close(fig)
 
     # ------------------------------------------------------------------

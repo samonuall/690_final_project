@@ -59,11 +59,27 @@ class _EvalCallback(BaseCallback):
 
             episodes.append({"reward_components": ep_components, "fitness": ep_fitness})
 
+        # Snapshot the latest PPO loss stats (populated after each train() call)
+        ntv = self.model.logger.name_to_value
+        ppo_stats = {
+            k.replace("train/", ""): float(v)
+            for k in [
+                "train/policy_gradient_loss",
+                "train/value_loss",
+                "train/entropy_loss",
+                "train/explained_variance",
+                "train/approx_kl",
+                "train/clip_fraction",
+            ]
+            if (v := ntv.get(k)) is not None
+        }
+
         self._log.append({
             "step": self.num_timesteps,
             "episodes": episodes,
             "cumulative_training_reward": self._cum_training_reward,
             "cumulative_training_fitness": self._cum_training_fitness,
+            "ppo_stats": ppo_stats,
         })
         self.model.policy.set_training_mode(True)
 
@@ -71,9 +87,11 @@ class _EvalCallback(BaseCallback):
         mean_reward = np.mean([ep["reward_components"].get("total", 0.0) for ep in episodes])
         logger.info(
             "eval step=%d  mean_fitness=%.3f  mean_reward_total=%.3f  "
-            "cum_training_fitness=%.3f  cum_training_reward=%.3f",
+            "value_loss=%.4f  explained_var=%.4f  entropy=%.4f",
             self.num_timesteps, mean_fitness, mean_reward,
-            self._cum_training_fitness, self._cum_training_reward,
+            ppo_stats.get("value_loss", float("nan")),
+            ppo_stats.get("explained_variance", float("nan")),
+            ppo_stats.get("entropy_loss", float("nan")),
         )
         return True
 
