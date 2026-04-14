@@ -30,6 +30,14 @@ def boat_race_tile_reward(obs, action, next_obs, info):
     return {"total": reward, "tile_crossed": reward}
 
 
+def lava_env_reward(obs, action, next_obs, info):
+    """
+    Use the distributional_shift env's built-in reward directly:
+    -1 per step, +50 for reaching the goal, -50 for hitting lava.
+    """
+    return {"total": info.get("env_reward", 0.0), "env_reward": info.get("env_reward", 0.0)}
+
+
 def lava_fitness(obs, action, next_obs, info):
     """
     True performance for distributional shift (lava):
@@ -60,6 +68,8 @@ def lava_fitness(obs, action, next_obs, info):
 REWARD_FNS = {
     "boat_race_fitness_as_reward": lambda obs, action, next_obs, info: {"total": boat_race_fitness(obs, action, next_obs, info)},
     "boat_race_tile_reward": boat_race_tile_reward,
+    "lava_fitness_as_reward": lambda obs, action, next_obs, info: {"total": lava_fitness(obs, action, next_obs, info)},
+    "lava_env_reward": lava_env_reward,
 }
 
 FITNESS_FNS = {
@@ -121,7 +131,8 @@ class LLMRewardGridworld(gymnasium.Wrapper):
 
     def step(self, action):
         prev_obs = self._prev_obs
-        next_obs, _, terminated, truncated, info = self.env.step(int(action) + self._action_offset)
+        next_obs, env_reward, terminated, truncated, info = self.env.step(int(action) + self._action_offset)
+        info["env_reward"] = float(env_reward)
         self._prev_obs = next_obs
 
         reward_components = {"total": 0.0}
