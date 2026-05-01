@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/lava_test
+output_dir: runs/lava_manhatten_distance
 
 ppo:
   total_timesteps: 500000

@@ -70,14 +70,8 @@ def plot_training(log_dir):
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 3: Eval fitness vs eval reward total over training steps
+    # Plot 3: Eval fitness vs eval reward total over training steps (raw)
     # ------------------------------------------------------------------
-    def _minmax(vals):
-        lo, hi = min(vals), max(vals)
-        if hi == lo:
-            return [0.0] * len(vals)
-        return [(v - lo) / (hi - lo) for v in vals]
-
     fig, ax = plt.subplots()
     for label, log in logs:
         steps = [e["step"] for e in log["entries"]]
@@ -86,11 +80,11 @@ def plot_training(log_dir):
             np.mean([ep["reward_components"].get("total", 0.0) for ep in e["episodes"]])
             for e in log["entries"]
         ]
-        ax.plot(steps, _minmax(mean_fitness), label=f"{label} fitness")
-        ax.plot(steps, _minmax(mean_reward), linestyle="--", label=f"{label} reward total")
+        ax.plot(steps, mean_fitness, label=f"{label} fitness")
+        ax.plot(steps, mean_reward, linestyle="--", label=f"{label} reward total")
     ax.set_xlabel("Training steps")
-    ax.set_ylabel("Normalized value [0, 1]")
-    ax.set_title("Fitness vs reward total over training (normalized)")
+    ax.set_ylabel("Mean episode value (eval)")
+    ax.set_title("Fitness vs reward total over training")
     ax.legend()
     fig.savefig(os.path.join(plots_dir, "fitness_vs_reward.png"), bbox_inches="tight")
     plt.close(fig)

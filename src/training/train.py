@@ -132,6 +132,7 @@ def train_ppo(env, reward_fn, fitness_fn, cfg, output_dir):
         n_steps=ppo_cfg["n_steps"],
         batch_size=ppo_cfg["batch_size"],
         gamma=ppo_cfg.get("gamma", 0.99),
+        ent_coef=ppo_cfg.get("ent_coef", 0.0),
         policy_kwargs=dict(net_arch=ppo_cfg["net_arch"]),
         seed=seed,
         verbose=0,

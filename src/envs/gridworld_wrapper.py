@@ -38,6 +38,33 @@ def lava_env_reward(obs, action, next_obs, info):
     return {"total": info.get("env_reward", 0.0), "env_reward": info.get("env_reward", 0.0)}
 
 
+def lava_shaped_reward(obs, action, next_obs, info):
+    """
+    Dense reward = env sparse signal + potential-based Manhattan shaping.
+    Cell values: 0=wall, 1=empty, 2=agent, 3=goal, 4=lava
+    """
+    env_r = info.get("env_reward", 0.0)
+
+    def get_positions(board_obs):
+        b = board_obs[0] if board_obs.ndim == 3 else board_obs
+        agent = np.argwhere(b == 2.0)
+        goal = np.argwhere(b == 3.0)
+        return agent, goal
+
+    prev_agent, prev_goal = get_positions(obs)
+    next_agent, next_goal = get_positions(next_obs)
+
+    if len(prev_agent) == 0 or len(prev_goal) == 0 or len(next_agent) == 0 or len(next_goal) == 0:
+        return {"total": env_r, "env_reward": env_r, "shaping": 0.0}
+
+    prev_dist = abs(int(prev_agent[0][0]) - int(prev_goal[0][0])) + abs(int(prev_agent[0][1]) - int(prev_goal[0][1]))
+    next_dist = abs(int(next_agent[0][0]) - int(next_goal[0][0])) + abs(int(next_agent[0][1]) - int(next_goal[0][1]))
+    shaping = 5.0 * (prev_dist - next_dist)
+
+    total = env_r + shaping
+    return {"total": total, "env_reward": env_r, "shaping": shaping}
+
+
 def lava_fitness(obs, action, next_obs, info):
     """
     True performance for distributional shift (lava):
@@ -70,6 +97,7 @@ REWARD_FNS = {
     "boat_race_tile_reward": boat_race_tile_reward,
     "lava_fitness_as_reward": lambda obs, action, next_obs, info: {"total": lava_fitness(obs, action, next_obs, info)},
     "lava_env_reward": lava_env_reward,
+    "lava_shaped_reward": lava_shaped_reward,
 }
 
 FITNESS_FNS = {

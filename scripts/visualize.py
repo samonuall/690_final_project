@@ -2,9 +2,9 @@
 Visualize a trained PPO policy on a gridworld environment.
 
 Usage:
-    uv run python scripts/visualize.py --model runs/test/ppo_policy --env boat_race
-    uv run python scripts/visualize.py --model runs/test/ppo_policy --env distributional_shift --save-gif out.gif
-    uv run python scripts/visualize.py --model runs/test/ppo_policy --env boat_race --episodes 3 --delay 0.15
+    uv run python scripts/visualize.py --model runs/lava_test/test/ppo_policy --env boat_race
+    uv run python scripts/visualize.py --model runs/lava_test/test/ppo_policy --env distributional_shift --save-gif lava_test.gif
+    uv run python scripts/visualize.py --model runs/boat_race_test/test/ppo_policy --env boat_race --episodes 3 --delay 0.15
 """
 
 import argparse
