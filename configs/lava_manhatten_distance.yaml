@@ -2,7 +2,7 @@ seed: 42
 output_dir: runs/lava_manhatten_distance
 
 ppo:
-  total_timesteps: 500000
+  total_timesteps: 200000
   eval_freq: 5000
   eval_episodes: 5
   net_arch: [64, 64]

@@ -4,7 +4,8 @@ import os
 
 import matplotlib.pyplot as plt
 import numpy as np
-
+# TODO: normalize reward components since the numbers are kind of different magnitudes
+# Will need to say what fitness value is maximum, and its more about comparing trends
 
 def _load_logs(log_dir):
     """Return list of (label, log_dict) for every training_log.json found under log_dir."""
@@ -70,7 +71,7 @@ def plot_training(log_dir):
     plt.close(fig)
 
     # ------------------------------------------------------------------
-    # Plot 3: Eval fitness vs eval reward total over training steps (raw)
+    # Plot 3: Eval fitness vs eval reward total over training steps (standardized)
     # ------------------------------------------------------------------
     fig, ax = plt.subplots()
     for label, log in logs:
@@ -80,11 +81,15 @@ def plot_training(log_dir):
             np.mean([ep["reward_components"].get("total", 0.0) for ep in e["episodes"]])
             for e in log["entries"]
         ]
-        ax.plot(steps, mean_fitness, label=f"{label} fitness")
-        ax.plot(steps, mean_reward, linestyle="--", label=f"{label} reward total")
+        fitness_std = np.std(mean_fitness)
+        reward_std = np.std(mean_reward)
+        fitness_series = (np.array(mean_fitness) - np.mean(mean_fitness)) / (fitness_std if fitness_std > 0 else 1.0)
+        reward_series = (np.array(mean_reward) - np.mean(mean_reward)) / (reward_std if reward_std > 0 else 1.0)
+        ax.plot(steps, fitness_series, label=f"{label} fitness (std)")
+        ax.plot(steps, reward_series, linestyle="--", label=f"{label} reward total (std)")
     ax.set_xlabel("Training steps")
-    ax.set_ylabel("Mean episode value (eval)")
-    ax.set_title("Fitness vs reward total over training")
+    ax.set_ylabel("Standardized mean episode value (eval)")
+    ax.set_title("Fitness vs reward total over training (standardized)")
     ax.legend()
     fig.savefig(os.path.join(plots_dir, "fitness_vs_reward.png"), bbox_inches="tight")
     plt.close(fig)
