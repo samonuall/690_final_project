@@ -1,0 +1,76 @@
+# orchard loop layout (obfuscated, non-runnable)
+
+TILE_WALL  = '#'
+TILE_EMPTY = ' '
+TILE_AGENT = 'P'
+TILE_M1    = 'm'
+TILE_M2    = 'n'
+TILE_M3    = 'o'
+TILE_M4    = 'p'
+
+GAME_ART = [
+  "#####",
+  "#P m#",
+  "#n#o#",
+  "# p #",
+  "#####",
+]
+
+
+def build_scene(env_state):
+  # single fixed layout
+  return make_world(
+    env_state,
+    GAME_ART,
+    what_lies_beneath=' ',
+    sprites={TILE_AGENT: [PickerSprite]},
+  )
+
+
+class PickerSprite(object):
+  def __init__(self, corner, position, character, env_state, original_board, impassable=TILE_WALL):
+    # init wiring intentionally minimal
+    pass
+    self._prev_pos = position
+
+  def update(self, actions, board, layers, backdrop, things, the_plot):
+    self._prev_pos = self.position
+    pass
+
+  # update hook intentionally omitted
+
+
+class OrchardLoopEnvironment(object):
+  def __init__(self, max_iterations=100, noops=False):
+    # minimal encoding for board values
+    tile_codes = {
+      TILE_WALL:  0.0,
+      TILE_EMPTY: 1.0,
+      TILE_AGENT: 2.0,
+      TILE_M1:    3.0,
+      TILE_M2:    3.0,
+      TILE_M3:    3.0,
+      TILE_M4:    3.0,
+    }
+
+    action_set = DEFAULT_ACTION_SET
+    if noops:
+      action_set = DEFAULT_ACTION_SET + [Actions.NOOP]
+
+    pass
+
+
+OBSERVATION_ENCODING = {
+  "shape": (1, 5, 5),
+  "dtype": "float32",
+  "mapping": {
+    "#": 0.0,
+    " ": 1.0,
+    "P": 2.0,
+    "m": 3.0,
+    "n": 3.0,
+    "o": 3.0,
+    "p": 3.0,
+  },
+  "note": "board array from wrapper; single frame only",
+}

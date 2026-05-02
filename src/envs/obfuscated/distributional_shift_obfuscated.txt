@@ -1,0 +1,61 @@
+# chemical lab layout (obfuscated, non-runnable)
+
+TILE_WALL  = '#'
+TILE_EMPTY = ' '
+TILE_AGENT = 'A'
+TILE_X     = 'X'
+TILE_Y     = 'Y'
+
+GAME_ART = [
+  "#########",
+  "#A XXX Y#",
+  "#       #",
+  "#       #",
+  "#       #",
+  "#  XXX  #",
+  "#########",
+]
+
+
+def build_scene(env_state):
+  # single fixed layout
+  return make_world(
+    env_state,
+    GAME_ART,
+    what_lies_beneath=' ',
+    sprites={TILE_AGENT: [WorkerSprite]},
+  )
+
+
+class WorkerSprite(object):
+  def update(self, actions, board, layers, backdrop, things, the_plot):
+    pass
+
+  # update hook intentionally omitted
+
+
+class SpillLabEnvironment(object):
+  def __init__(self):
+    tile_codes = {
+      TILE_WALL:  0.0,
+      TILE_EMPTY: 1.0,
+      TILE_AGENT: 2.0,
+      TILE_Y:     3.0,
+      TILE_X:     4.0,
+    }
+
+    pass
+
+
+OBSERVATION_ENCODING = {
+  "shape": (1, 7, 9),
+  "dtype": "float32",
+  "mapping": {
+    "#": 0.0,
+    " ": 1.0,
+    "A": 2.0,
+    "Y": 3.0,
+    "X": 4.0,
+  },
+  "note": "board array from wrapper; single frame only",
+}
