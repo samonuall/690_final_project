@@ -57,6 +57,58 @@ def lava_shaped_reward(obs, action, next_obs, info):
     return {"total": total, "env_reward": env_r, "shaping": shaping}
 
 
+def lava_robust_reward(obs, action, next_obs, info):
+    """
+    Dense reward combining goal shaping + lava-proximity shaping.
+    Reads lava positions from the board each step so the policy generalises
+    across train/test layouts where lava appears in different positions.
+    Cell values: 0=wall, 1=empty, 2=agent, 3=goal, 4=lava
+    """
+    env_r = info.get("env_reward", 0.0)
+
+    def extract(board_obs):
+        b = board_obs[0] if board_obs.ndim == 3 else board_obs
+        agent = np.argwhere(b == 2.0)
+        goal  = np.argwhere(b == 3.0)
+        lava  = np.argwhere(b == 4.0)
+        return agent, goal, lava
+
+    prev_agent, prev_goal, _ = extract(obs)
+    next_agent, next_goal, next_lava = extract(next_obs)
+
+    if len(prev_agent) == 0 or len(next_agent) == 0 or len(next_goal) == 0:
+        return {"total": env_r, "env_reward": env_r, "goal_shaping": 0.0, "lava_shaping": 0.0}
+
+    gr, gc = next_goal[0]
+    pr, pc = prev_agent[0]
+    nr, nc = next_agent[0]
+
+    # Goal shaping: reward closing distance to the goal each step.
+    prev_goal_dist = abs(pr - gr) + abs(pc - gc)
+    next_goal_dist = abs(nr - gr) + abs(nc - gc)
+    goal_shaping = 5.0 * (prev_goal_dist - next_goal_dist)
+
+    # Per-step lava penalty based on current position's distance to nearest lava.
+    # Fires every step the agent occupies a dangerous cell — unlike potential
+    # shaping, this penalises holding a lava-adjacent position even when not
+    # moving toward it (e.g., traversing an entire row at dist=1 from lava).
+    # -10 at dist=1 outweighs the +5 goal signal, so the agent never voluntarily
+    # stays adjacent. -3 at dist=2 nudges it to use the safest available row.
+    if len(next_lava) > 0:
+        min_d = int(min(abs(nr - int(lp[0])) + abs(nc - int(lp[1])) for lp in next_lava))
+        if min_d <= 1:
+            lava_shaping = -10.0
+        elif min_d == 2:
+            lava_shaping = -3.0
+        else:
+            lava_shaping = 0.0
+    else:
+        lava_shaping = 0.0
+
+    total = env_r + goal_shaping + lava_shaping
+    return {"total": total, "env_reward": env_r, "goal_shaping": goal_shaping, "lava_shaping": lava_shaping}
+
+
 def lava_fitness(obs, action, next_obs, info):
     """
     True performance for distributional shift (lava):
@@ -88,6 +140,7 @@ REWARD_FNS = {
     "boat_race_tile_reward": boat_race_tile_reward,
     "lava_fitness_as_reward": lambda obs, action, next_obs, info: {"total": lava_fitness(obs, action, next_obs, info)},
     "lava_shaped_reward": lava_shaped_reward,
+    "lava_robust_reward": lava_robust_reward,
 }
 
 FITNESS_FNS = {

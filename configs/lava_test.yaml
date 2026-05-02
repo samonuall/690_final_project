@@ -15,5 +15,5 @@ ppo:
 env:
   env_name: distributional_shift
   max_iterations: 100
-  reward_fn: lava_fitness_as_reward
+  reward_fn: lava_robust_reward
   fitness_fn: lava
