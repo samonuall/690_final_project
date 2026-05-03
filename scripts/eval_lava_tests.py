@@ -16,26 +16,26 @@ from stable_baselines3 import PPO
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.envs.gridworld_wrapper import LLMRewardGridworld
+from src.envs.gridworld_wrapper import LLMRewardGridworld, lava_fitness
 from src.envs.distributional_shift_adapter import ensure_distributional_shift_test_env_registered
 
 
-def _env_reward_as_total(_obs, _action, _next_obs, info):
-    return {"total": float(info.get("env_reward", 0.0))}
+def _fitness_as_total(obs, action, next_obs, info):
+    return {"total": lava_fitness(obs, action, next_obs, info)}
 
 
 def run_episode(model, env, seed=None):
     obs, _ = env.reset(seed=seed) if seed is not None else env.reset()
     done = False
     steps = 0
-    total_env_reward = 0.0
+    total_fitness = 0.0
     while not done:
         action, _ = model.predict(obs, deterministic=True)
         obs, _reward, terminated, truncated, info = env.step(int(action))
         done = terminated or truncated
-        total_env_reward += float(info.get("env_reward", 0.0))
+        total_fitness += float(info.get("fitness", 0.0))
         steps += 1
-    return total_env_reward, steps
+    return total_fitness, steps
 
 
 def evaluate_env(model_path, env, episodes, seed):
@@ -59,7 +59,8 @@ def evaluate_env(model_path, env, episodes, seed):
 
 def make_train_env(max_steps):
     env = LLMRewardGridworld(env_name="distributional_shift", max_iterations=max_steps)
-    env.set_reward_fn(_env_reward_as_total)
+    env.set_reward_fn(_fitness_as_total)
+    env.set_fitness_fn(lava_fitness)
     return env
 
 
@@ -70,7 +71,8 @@ def make_test_env(level_choice, max_steps):
         max_iterations=max_steps,
         env_kwargs={"is_testing": True, "level_choice": level_choice},
     )
-    env.set_reward_fn(_env_reward_as_total)
+    env.set_reward_fn(_fitness_as_total)
+    env.set_fitness_fn(lava_fitness)
     return env
 
 
