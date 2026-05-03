@@ -26,7 +26,7 @@ def main():
     if "llm" in cfg:
         from src.llm.loop import LLMRewardLoop
         loop = LLMRewardLoop(cfg)
-        loop.run()
+        loop.run()  # plot_training called per iter inside the loop
     else:
         # Direct training mode (no LLM loop)
         env = LLMRewardGridworld(
@@ -38,8 +38,8 @@ def main():
         direct_output_dir = os.path.join(output_dir, "test")
         model = train_ppo(env, reward_fn, fitness_fn, cfg, direct_output_dir)
         model.save(os.path.join(direct_output_dir, "ppo_policy"))
+        plot_training(output_dir)
 
-    plot_training(output_dir)
     log.info("Done.")
 
 

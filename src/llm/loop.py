@@ -5,6 +5,7 @@ import traceback
 from pathlib import Path
 
 from src.envs.gridworld_wrapper import LLMRewardGridworld, FITNESS_FNS
+from src.plot import plot_training
 from src.training.train import train_ppo
 from .client import OpenRouterClient
 from .prompts import build_system_prompt, build_feedback_message, extract_python_code
@@ -68,6 +69,8 @@ class LLMRewardLoop:
 
             with open(iter_dir / "training_log.json") as f:
                 training_log = json.load(f)
+
+            plot_training(str(iter_dir))
 
             round_tokens = self.client.token_usage[send_idx_before:send_idx_after]
             iteration_records.append({
