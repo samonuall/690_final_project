@@ -3,7 +3,17 @@ ai-safety-gridworlds/
 __pycache__/
 **/__pycache__/
 **/*.log
-reports/
 runs/
 690_final_project.egg-info
 .env
+
+# LaTeX build artifacts (keep .tex and .pdf tracked)
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.fdb_latexmk
+**/*.fls
+**/*.out
+**/*.synctex.gz
+**/*.toc
+
