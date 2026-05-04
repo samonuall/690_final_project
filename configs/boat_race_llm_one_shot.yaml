@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/boat_race_llm
+output_dir: runs/boat_race_llm_one_shot
 
 ppo:
   total_timesteps: 50000
@@ -20,7 +20,7 @@ env:
 
 llm:
   model: anthropic/claude-sonnet-4-6
-  n_iterations: 3
+  n_iterations: 1
   system_prompt_file: src/context/prompts/baseline.md
   context_file: src/context/boat_race.md
   obfuscated_code_file: src/context/obfuscated/boat_race_obfuscated.txt

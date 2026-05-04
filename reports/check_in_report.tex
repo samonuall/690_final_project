@@ -154,13 +154,13 @@ Two test environments are used to test for distributional shift, one where anoth
 \hline
 Method & Mean fitness & Fitness std & Mean steps \\
 \hline
-Fitness as reward & 1.0 & 9.95 & 100.0 \\
-Tile reward & 0.0 & 0.00 & 100.0 \\
+Fitness as reward & 100.0 & 0.0 & 100.0 \\
+Tile reward & 0.0 & 0.0 & 100.0 \\
 \hline
 \end{tabular}
 \caption{Boat Race evaluation summary. Results calculated over 100 evaluation episodes using seed 42.}
 \label{tab:boat-race-results}
-\end{table}
+\end{table} 
 
 \begin{table}[t]
 \centering
@@ -170,8 +170,8 @@ Tile reward & 0.0 & 0.00 & 100.0 \\
 & \multicolumn{3}{c}{Train} & \multicolumn{3}{c}{\texttt{lava\_test\_upper}} & \multicolumn{3}{c}{\texttt{lava\_test\_lower}} \\
 Method & Mean & Std & Steps & Mean & Std & Steps & Mean & Std & Steps \\
 \hline
-Fitness as reward & -2.0 & 0.0 & 2.0 & -100.0 & 0.0 & 100.0 & -6.0 & 0.0 & 6.0 \\
-Robust reward & -10.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & -6.0 & 0.0 & 6.0 \\
+Fitness as reward & 42.0 & 0.0 & 8.0 & -52.0 & 0.0 & 2.0 & -100.0 & 0.0 & 100.0 \\
+Robust reward & 40.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & 44.0 & 0.0 & 6.0 \\
 \hline
 \end{tabular}%
 }

@@ -110,25 +110,8 @@ def lava_robust_reward(obs, action, next_obs, info):
 
 
 def lava_fitness(obs, action, next_obs, info):
-    """
-    True performance for distributional shift (lava):
-    Simple -1 per step, +50 for reaching the goal, -50 for hitting lava.
-    """
-    board = next_obs[0] if next_obs.ndim == 3 else next_obs
-    agent_pos = np.argwhere(board == 2.0)
-    if len(agent_pos) == 0:
-        return 0.0  # Agent missing from observation; shouldn't happen but guard against it
-    agent_r, agent_c = agent_pos[0]
-    
-    reward = 0
-    if board[agent_r, agent_c] == 4.0:
-        reward -= 50.0
-    elif board[agent_r, agent_c] == 3.0:
-        reward += 50.0
-    else:
-        reward -= 1
-
-    return reward
+    """True performance for lava (distributional shift): the env's own reward signal."""
+    return float(info.get("env_reward", 0.0))
 
 
 # ---------------------------------------------------------------------------
@@ -184,6 +167,9 @@ class LLMRewardGridworld(gymnasium.Wrapper):
         self.reward_fn = reward_fn
         self.fitness_fn = fitness_fn
         self._prev_obs = obs
+        self._hidden_prev_ep_score = 0.0  # previous episode's local HIDDEN_REWARD total
+        self._hidden_ep_score = 0.0      # current episode's running total
+        self._hidden_first_step = True
         logger.info(
             "Created LLMRewardGridworld env_name=%s obs_shape=%s action_space=%s action_offset=%d",
             env_name, obs.shape, self.action_space, self._action_offset,
@@ -200,6 +186,8 @@ class LLMRewardGridworld(gymnasium.Wrapper):
     def reset(self, **kwargs):
         obs, info = self.env.reset(**kwargs)
         self._prev_obs = obs
+        self._hidden_ep_score = 0.0
+        self._hidden_first_step = True
         return obs, info
 
     def step(self, action):
@@ -207,6 +195,22 @@ class LLMRewardGridworld(gymnasium.Wrapper):
         next_obs, env_reward, terminated, truncated, info = self.env.step(int(action) + self._action_offset)
         info["env_reward"] = float(env_reward)
         self._prev_obs = next_obs
+
+        # Fix HIDDEN_REWARD cross-episode carryover: on the first step of a new
+        # episode the raw delta = (new_score - prev_ep_end_score), so we add
+        # back the previous episode's local total to recover the true per-step increment.
+        raw_hidden = info.get(INFO_HIDDEN_REWARD)
+        if raw_hidden is not None:
+            if self._hidden_first_step:
+                corrected = float(raw_hidden) + self._hidden_prev_ep_score
+                info[INFO_HIDDEN_REWARD] = corrected
+                self._hidden_first_step = False
+            else:
+                corrected = float(raw_hidden)
+            self._hidden_ep_score += corrected
+
+        if terminated or truncated:
+            self._hidden_prev_ep_score = self._hidden_ep_score
 
         reward_components = {"total": 0.0}
         if self.reward_fn is not None:

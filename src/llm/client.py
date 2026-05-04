@@ -12,13 +12,14 @@ _OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 class OpenRouterClient:
     """Stateful OpenRouter chat client that maintains conversation history."""
 
-    def __init__(self, model: str):
+    def __init__(self, model: str, temperature: float = 1.0):
         load_dotenv()
         api_key = os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
             raise EnvironmentError("OPENROUTER_API_KEY not set — add it to .env")
         self._api_key = api_key
         self.model = model
+        self.temperature = temperature
         self.messages: list[dict] = []
         # One entry per send() call: {"prompt_tokens": int, "completion_tokens": int, "total_tokens": int}
         self.token_usage: list[dict] = []
@@ -34,7 +35,7 @@ class OpenRouterClient:
                 "Authorization": f"Bearer {self._api_key}",
                 "Content-Type": "application/json",
             },
-            json={"model": self.model, "messages": self.messages},
+            json={"model": self.model, "messages": self.messages, "temperature": self.temperature},
             timeout=180,
         )
         resp.raise_for_status()

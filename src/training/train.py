@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 class _EvalCallback(BaseCallback):
-    def __init__(self, eval_env, eval_freq, eval_episodes, log, total_timesteps):
+    def __init__(self, eval_env, eval_freq, eval_episodes, log, total_timesteps, output_dir=None):
         super().__init__(verbose=0)
         self._eval_env = eval_env
         self._eval_freq = eval_freq
@@ -18,6 +18,8 @@ class _EvalCallback(BaseCallback):
         self._log = log  # shared list, mutated in-place
         self._total_timesteps = total_timesteps
         self._log_freq = max(1, total_timesteps // 10)  # progress log every ~10%
+        self._output_dir = output_dir
+        self._best_mean_fitness = float("-inf")
         # Running totals accumulated during training steps (not eval rollouts)
         self._cum_training_reward = 0.0
         self._cum_training_fitness = 0.0
@@ -85,6 +87,13 @@ class _EvalCallback(BaseCallback):
 
         mean_fitness = np.mean([ep["fitness"] for ep in episodes])
         mean_reward = np.mean([ep["reward_components"].get("total", 0.0) for ep in episodes])
+
+        if self._output_dir is not None and mean_fitness > self._best_mean_fitness:
+            self._best_mean_fitness = mean_fitness
+            best_path = os.path.join(self._output_dir, "best_model")
+            self.model.save(best_path)
+            logger.info("New best model (mean_fitness=%.3f) saved to %s", mean_fitness, best_path)
+
         logger.info(
             "eval step=%d  mean_fitness=%.3f  mean_reward_total=%.3f  "
             "value_loss=%.4f  explained_var=%.4f  entropy=%.4f",
@@ -138,6 +147,7 @@ def train_ppo(env, reward_fn, fitness_fn, cfg, output_dir):
         verbose=0,
     )
 
+    os.makedirs(output_dir, exist_ok=True)
     log = []
     callback = _EvalCallback(
         eval_env=env,
@@ -145,11 +155,11 @@ def train_ppo(env, reward_fn, fitness_fn, cfg, output_dir):
         eval_episodes=ppo_cfg["eval_episodes"],
         log=log,
         total_timesteps=ppo_cfg["total_timesteps"],
+        output_dir=output_dir,
     )
 
     model.learn(total_timesteps=ppo_cfg["total_timesteps"], callback=callback)
 
-    os.makedirs(output_dir, exist_ok=True)
     result = {
         "total_timesteps": ppo_cfg["total_timesteps"],
         "eval_freq": ppo_cfg["eval_freq"],
