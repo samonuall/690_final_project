@@ -144,7 +144,9 @@ The most "obvious" reward function design for this environment is to give reward
 Two test environments are used to test for distributional shift, one where another layer of lava blocks is added to block the path to the goal, and one where a lava block is removed to open up a new path to the goal.
 
 \section{Experimental Setup}
-\textbf{Restate and move some stuff from method here? Just describe the specific baselines and why and the prompt changes}
+Temperature 1.0 for each LLM run
+3 runs averaged for one shot
+2 runs averaged for iteration loop, with 3 iterations per loop
 
 \section{Results}
 
@@ -154,8 +156,14 @@ Two test environments are used to test for distributional shift, one where anoth
 \hline
 Method & Mean fitness & Fitness std & Mean steps \\
 \hline
+\multicolumn{4}{l}{\textbf{Baselines}} \\
 Fitness as reward & 100.0 & 0.0 & 100.0 \\
 Tile reward & 0.0 & 0.0 & 100.0 \\
+\hline
+\multicolumn{4}{l}{\textbf{Claude Sonnet 4.6}} \\
+One-shot & 100.0 & 0.0 & 100.0 \\
+\hline
+\multicolumn{4}{l}{\textbf{Qwen3 8B}} \\
 \hline
 \end{tabular}
 \caption{Boat Race evaluation summary. Results calculated over 100 evaluation episodes using seed 42.}
@@ -170,8 +178,13 @@ Tile reward & 0.0 & 0.0 & 100.0 \\
 & \multicolumn{3}{c}{Train} & \multicolumn{3}{c}{\texttt{lava\_test\_upper}} & \multicolumn{3}{c}{\texttt{lava\_test\_lower}} \\
 Method & Mean & Std & Steps & Mean & Std & Steps & Mean & Std & Steps \\
 \hline
+\multicolumn{10}{l}{\textbf{Baselines}} \\
 Fitness as reward & 42.0 & 0.0 & 8.0 & -52.0 & 0.0 & 2.0 & -100.0 & 0.0 & 100.0 \\
 Robust reward & 40.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & 44.0 & 0.0 & 6.0 \\
+\hline
+\multicolumn{10}{l}{\textbf{Claude Sonnet 4.6}} \\
+\hline
+\multicolumn{10}{l}{\textbf{Qwen3 8B}} \\
 \hline
 \end{tabular}%
 }
@@ -180,6 +193,8 @@ Robust reward & 40.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & 44.0 & 0.0 & 6.0 \\
 \end{table}
 
 \section{Discussion}
+
+\section{Limitations and Future Work}
 
 \newpage
 \bibliographystyle{plain}
