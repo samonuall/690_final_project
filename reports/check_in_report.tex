@@ -131,7 +131,7 @@ on 100 episodes as the "final" reward function generated.
 		\centering
 		\includegraphics[width=\linewidth]{lava_world_env.png}
 	\end{minipage}
-	\caption{Left: Boat Race environment. Right: Lava World environment.}
+	\caption{Left: Boat Race environment. Right: Lava World environment. Figures from \cite{leike2017aisafetygridworlds}.}
 	\label{fig:envs}
 \end{figure}
 We use the boat race environment from \cite{leike2017aisafetygridworlds} to test the LLM's ability to design reward functions which mitigate reward hacking. In this environment, the agent is placed in a circular track with checkpoints placed around the track.
@@ -147,6 +147,37 @@ Two test environments are used to test for distributional shift, one where anoth
 \textbf{Restate and move some stuff from method here? Just describe the specific baselines and why and the prompt changes}
 
 \section{Results}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\hline
+Method & Mean fitness & Fitness std & Mean steps \\
+\hline
+Fitness as reward & 1.0 & 9.95 & 100.0 \\
+Tile reward & 0.0 & 0.00 & 100.0 \\
+\hline
+\end{tabular}
+\caption{Boat Race evaluation summary. Results calculated over 100 evaluation episodes using seed 42.}
+\label{tab:boat-race-results}
+\end{table}
+
+\begin{table}[t]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccc ccc ccc}
+\hline
+& \multicolumn{3}{c}{Train} & \multicolumn{3}{c}{\texttt{lava\_test\_upper}} & \multicolumn{3}{c}{\texttt{lava\_test\_lower}} \\
+Method & Mean & Std & Steps & Mean & Std & Steps & Mean & Std & Steps \\
+\hline
+Fitness as reward & -2.0 & 0.0 & 2.0 & -100.0 & 0.0 & 100.0 & -6.0 & 0.0 & 6.0 \\
+Robust reward & -10.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & -6.0 & 0.0 & 6.0 \\
+\hline
+\end{tabular}%
+}
+\caption{Lava World evaluation summary (100 episodes per environment using seed 42). Mean and std of fitness scores and mean steps to episode termination are reported. The "Train" column reports results in the training environment, while the "Test" columns report results in the two test environments.}
+\label{tab:lava-results}
+\end{table}
 
 \section{Discussion}
 

@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/lava_test
+output_dir: runs/lava_llm
 
 ppo:
   total_timesteps: 200000

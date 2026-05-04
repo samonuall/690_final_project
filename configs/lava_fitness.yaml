@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/lava_manhatten_distance
+output_dir: runs/lava_fitness
 
 ppo:
   total_timesteps: 200000
@@ -15,5 +15,5 @@ ppo:
 env:
   env_name: distributional_shift
   max_iterations: 100
-  reward_fn: lava_shaped_reward
+  reward_fn: lava_fitness_as_reward
   fitness_fn: lava

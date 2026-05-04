@@ -1,5 +1,5 @@
 seed: 42
-output_dir: runs/boat_race_test
+output_dir: runs/boat_race_fitness
 
 ppo:
   total_timesteps: 50000

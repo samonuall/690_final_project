@@ -88,8 +88,8 @@ def print_results(model_path, episodes, stats):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate PPO policy on the boat race environment.")
     parser.add_argument("--model", required=True, help="Path to saved model (.zip may be omitted)")
-    parser.add_argument("--episodes", type=int, default=10, help="Number of evaluation episodes")
-    parser.add_argument("--seed", type=int, default=None, help="Base seed for evaluation episodes")
+    parser.add_argument("--episodes", type=int, default=100, help="Number of evaluation episodes")
+    parser.add_argument("--seed", type=int, default=42, help="Base seed for evaluation episodes")
     parser.add_argument("--max-steps", type=int, default=100, help="Max steps per episode")
     args = parser.parse_args()
 
