@@ -21,6 +21,7 @@ env:
 llm:
   model: anthropic/claude-sonnet-4-6
   n_iterations: 1
+  temperature: 1.0
   system_prompt_file: src/context/prompts/baseline.md
   context_file: src/context/boat_race.md
   obfuscated_code_file: src/context/obfuscated/boat_race_obfuscated.txt

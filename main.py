@@ -14,10 +14,14 @@ log = logging.getLogger(__name__)
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True, help="Path to YAML config file")
+    parser.add_argument("--output-dir", default=None, help="Override output_dir from config")
     args = parser.parse_args()
 
     with open(args.config) as f:
         cfg = yaml.safe_load(f)
+
+    if args.output_dir is not None:
+        cfg["output_dir"] = args.output_dir
 
     output_dir = cfg["output_dir"]
     setup_logging(output_dir)

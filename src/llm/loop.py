@@ -31,7 +31,10 @@ class LLMRewardLoop:
         self.cfg = cfg
         self.llm_cfg = cfg["llm"]
         self.output_dir = Path(cfg["output_dir"])
-        self.client = OpenRouterClient(self.llm_cfg["model"])
+        self.client = OpenRouterClient(
+            self.llm_cfg["model"],
+            temperature=self.llm_cfg.get("temperature", 1.0),
+        )
         self.n_iterations: int = self.llm_cfg["n_iterations"]
 
     def run(self) -> None:
