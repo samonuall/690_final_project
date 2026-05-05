@@ -214,11 +214,19 @@ class LLMRewardGridworld(gymnasium.Wrapper):
 
         reward_components = {"total": 0.0}
         if self.reward_fn is not None:
-            reward_components = self.reward_fn(prev_obs, action, next_obs, info)
+            try:
+                reward_components = self.reward_fn(prev_obs, action, next_obs, info)
+            except Exception as e:
+                logger.warning("reward_fn raised an exception, using fallback reward=-100: %s", e, exc_info=True)
+                reward_components = {"total": -100.0, "error": -100.0}
 
         fitness = 0.0
         if self.fitness_fn is not None:
-            fitness = self.fitness_fn(prev_obs, action, next_obs, info)
+            try:
+                fitness = self.fitness_fn(prev_obs, action, next_obs, info)
+            except Exception as e:
+                logger.warning("fitness_fn raised an exception, using fallback fitness=0: %s", e, exc_info=True)
+                fitness = 0.0
 
         info["reward_components"] = reward_components
         info["fitness"] = fitness

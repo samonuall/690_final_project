@@ -162,11 +162,15 @@ Tile reward & 0.0 & 0.0 & 100.0 \\
 \hline
 \multicolumn{4}{l}{\textbf{Claude Sonnet 4.6}} \\
 One-shot & 100.0 & 0.0 & 100.0 \\
+Loop & 100.0 & 0.0 & 100.0 \\
 \hline
-\multicolumn{4}{l}{\textbf{Qwen3 8B}} \\
+\multicolumn{4}{l}{\textbf{Qwen3.5-9B}} \\
+One-shot & 2.667 & 0.943 & 100.0 \\
+Loop & 2.000 & 0.000 & 100.0 \\
 \hline
 \end{tabular}
-\caption{Boat Race evaluation summary. Results calculated over 100 evaluation episodes using seed 42.}
+\caption{Boat Race evaluation summary. Results calculated over 100 evaluation episodes using seed 42. LLM results are averaged over 3 runs. The best performing
+reward function in terms of mean fitness score from all iterations of a loop run is used for calculating mean results across looped runs.}
 \label{tab:boat-race-results}
 \end{table} 
 
@@ -183,12 +187,17 @@ Fitness as reward & 42.0 & 0.0 & 8.0 & -52.0 & 0.0 & 2.0 & -100.0 & 0.0 & 100.0 
 Robust reward & 40.0 & 0.0 & 10.0 & -100.0 & 0.0 & 100.0 & 44.0 & 0.0 & 6.0 \\
 \hline
 \multicolumn{10}{l}{\textbf{Claude Sonnet 4.6}} \\
+One-shot & -20.667 & 44.312 & 4.0 & -52.000 & 0.000 & 2.0 & -4.000 & 67.882 & 37.3 \\
+Loop & 42.000 & 0.000 & 8.0 & -52.000 & 0.000 & 2.0 & -28.000 & 72.000 & 53.0 \\
 \hline
-\multicolumn{10}{l}{\textbf{Qwen3 8B}} \\
+\multicolumn{10}{l}{\textbf{Qwen3.5-9B}} \\
+One-shot & -76.000 & 24.000 & 51.0 & -76.000 & 24.000 & 51.0 & -28.000 & 72.000 & 53.0 \\
+Loop & -5.000 & 47.000 & 5.0 & -52.500 & 0.500 & 2.5 & 44.000 & 0.000 & 6.0 \\
 \hline
 \end{tabular}%
 }
-\caption{Lava World evaluation summary (100 episodes per environment using seed 42). Mean and std of fitness scores and mean steps to episode termination are reported. The "Train" column reports results in the training environment, while the "Test" columns report results in the two test environments.}
+\caption{Lava World evaluation summary (100 episodes per environment using seed 42). Mean and std of fitness scores and mean steps to episode termination are reported. The "Train" column reports results in the training environment, while the "Test" columns report results in the two test environments.
+The best performing reward function in terms of mean fitness score from all iterations of a loop run is used for calculating mean results across looped runs.}
 \label{tab:lava-results}
 \end{table}
 

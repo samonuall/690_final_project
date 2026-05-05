@@ -20,14 +20,26 @@ echo "Runs:       ${N_RUNS}"
 echo "Parent dir: ${PARENT_DIR}"
 echo ""
 
+FAILED_RUNS=()
+
 for i in $(seq 1 "${N_RUNS}"); do
     RUN_DIR="${PARENT_DIR}/run_${i}"
     echo "=== Starting run ${i} / ${N_RUNS} → ${RUN_DIR} ==="
     mkdir -p "${RUN_DIR}"
-    uv run python main.py --config "${CONFIG}" --output-dir "${RUN_DIR}" \
-        2>&1 | tee "${RUN_DIR}/stdout.log"
-    echo "=== Run ${i} complete ==="
+    if uv run python main.py --config "${CONFIG}" --output-dir "${RUN_DIR}" \
+        2>&1 | tee "${RUN_DIR}/stdout.log"; then
+        echo "=== Run ${i} complete ==="
+    else
+        echo "=== Run ${i} FAILED (exit code $?) — continuing ==="
+        FAILED_RUNS+=("${i}")
+    fi
     echo ""
 done
 
-echo "All ${N_RUNS} runs complete. Results in: ${PARENT_DIR}"
+if [ ${#FAILED_RUNS[@]} -eq 0 ]; then
+    echo "All ${N_RUNS} runs complete. Results in: ${PARENT_DIR}"
+else
+    echo "${#FAILED_RUNS[@]} run(s) failed: ${FAILED_RUNS[*]}"
+    echo "Completed runs in: ${PARENT_DIR}"
+    exit 1
+fi
