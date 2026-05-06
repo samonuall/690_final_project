@@ -34,7 +34,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 # (config_name, n_runs)
 ABLATION_CONFIGS: list[tuple[str, int]] = [
     # Boat race — "keep it simple" ablation
-    ("boat_race_simple_one_shot",        3),
+    ("boat_race_simple_one_shot",        2),
     ("boat_race_simple_one_shot_qwen",   3),
     ("boat_race_simple_3_iters",         2),
     ("boat_race_simple_3_iters_qwen",    2),

@@ -1,0 +1,1566 @@
+{
+  "total_timesteps": 200000,
+  "eval_freq": 5000,
+  "entries": [
+    {
+      "step": 5000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -590.0000108703971,
+      "cumulative_training_fitness": -20750.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0004881166154518723,
+        "value_loss": 1.7658750057220458,
+        "entropy_loss": -1.3776596397161485,
+        "explained_variance": 0.0056490302085876465,
+        "approx_kl": 0.0013481196947395802,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 10000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -1210.000022880733,
+      "cumulative_training_fitness": -45799.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.021527296921703964,
+        "value_loss": 1.4756451532244683,
+        "entropy_loss": -1.354411032795906,
+        "explained_variance": 0.048368871212005615,
+        "approx_kl": 0.013883832842111588,
+        "clip_fraction": 0.15556640625
+      }
+    },
+    {
+      "step": 15000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -1790.0000333711505,
+      "cumulative_training_fitness": -85998.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.003838024745346047,
+        "value_loss": 2.090364436805248,
+        "entropy_loss": -1.2918851554393769,
+        "explained_variance": 0.23994284868240356,
+        "approx_kl": 0.004377535544335842,
+        "clip_fraction": 0.009912109375
+      }
+    },
+    {
+      "step": 20000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -2340.000042721629,
+      "cumulative_training_fitness": -140547.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00935558823402971,
+        "value_loss": 1.3845644742250443,
+        "entropy_loss": -1.1657251074910164,
+        "explained_variance": 0.2141256332397461,
+        "approx_kl": 0.008912980556488037,
+        "clip_fraction": 0.06669921875
+      }
+    },
+    {
+      "step": 25000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -2840.0000501722097,
+      "cumulative_training_fitness": -226546.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.05317753775743768,
+        "value_loss": 0.0232893954962492,
+        "entropy_loss": -0.7078926965594292,
+        "explained_variance": 0.08246856927871704,
+        "approx_kl": 0.00841458048671484,
+        "clip_fraction": 0.141259765625
+      }
+    },
+    {
+      "step": 30000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -3340.0000576227903,
+      "cumulative_training_fitness": -332395.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.04884807318449021,
+        "value_loss": 0.005204337122268044,
+        "entropy_loss": -0.4729764524847269,
+        "explained_variance": 0.3968375325202942,
+        "approx_kl": 0.003630483988672495,
+        "clip_fraction": 0.076123046875
+      }
+    },
+    {
+      "step": 35000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -3840.000065073371,
+      "cumulative_training_fitness": -448744.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03741617690538988,
+        "value_loss": 0.0023311724071390927,
+        "entropy_loss": -0.2882264548912644,
+        "explained_variance": 0.5797296762466431,
+        "approx_kl": 0.0023432360030710697,
+        "clip_fraction": 0.046484375
+      }
+    },
+    {
+      "step": 40000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -4340.0000725239515,
+      "cumulative_training_fitness": -570643.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.029614466420025565,
+        "value_loss": 0.0015521965666266623,
+        "entropy_loss": -0.205756963416934,
+        "explained_variance": 0.6545535624027252,
+        "approx_kl": 0.0014172714436426759,
+        "clip_fraction": 0.030029296875
+      }
+    },
+    {
+      "step": 45000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -4840.000079974532,
+      "cumulative_training_fitness": -694792.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.02107280728232581,
+        "value_loss": 0.0022151910881802904,
+        "entropy_loss": -0.13902310729026796,
+        "explained_variance": 0.49834948778152466,
+        "approx_kl": 0.0010035845916718245,
+        "clip_fraction": 0.02509765625
+      }
+    },
+    {
+      "step": 50000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -5340.000087425113,
+      "cumulative_training_fitness": -822491.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.014580867381300777,
+        "value_loss": 0.0009853336310698068,
+        "entropy_loss": -0.06478435690514743,
+        "explained_variance": 0.8078180700540543,
+        "approx_kl": 0.0006728265434503555,
+        "clip_fraction": 0.01328125
+      }
+    },
+    {
+      "step": 55000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -5840.000094875693,
+      "cumulative_training_fitness": -951290.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.010993049695389345,
+        "value_loss": 0.00030101782684823777,
+        "entropy_loss": -0.04119748226366937,
+        "explained_variance": 0.8958252593874931,
+        "approx_kl": 0.00018319243099540472,
+        "clip_fraction": 0.0064453125
+      }
+    },
+    {
+      "step": 60000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -6340.000102326274,
+      "cumulative_training_fitness": -1080539.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00544004506082274,
+        "value_loss": 9.993039231517286e-05,
+        "entropy_loss": -0.02455943145323545,
+        "explained_variance": 0.9783366490155458,
+        "approx_kl": 0.00010025166557170451,
+        "clip_fraction": 0.0021484375
+      }
+    },
+    {
+      "step": 65000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -6840.0001097768545,
+      "cumulative_training_fitness": -1210038.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0059539977344684305,
+        "value_loss": 8.502852811105299e-05,
+        "entropy_loss": -0.020112490421161054,
+        "explained_variance": 0.9687366560101509,
+        "approx_kl": 0.00037021111347712576,
+        "clip_fraction": 0.00234375
+      }
+    },
+    {
+      "step": 70000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -7340.000117227435,
+      "cumulative_training_fitness": -1339537.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.005318842950509861,
+        "value_loss": 4.7354636008623e-05,
+        "entropy_loss": -0.011976071272511036,
+        "explained_variance": 0.9924781662411988,
+        "approx_kl": 0.0001127755967900157,
+        "clip_fraction": 0.001708984375
+      }
+    },
+    {
+      "step": 75000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -7840.000124678016,
+      "cumulative_training_fitness": -1467286.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 0.01788599168648943,
+        "value_loss": 2.0116322366134365e-06,
+        "entropy_loss": -0.1463529547210783,
+        "explained_variance": 0.9998627855529776,
+        "approx_kl": 0.09247669577598572,
+        "clip_fraction": 0.14423828125
+      }
+    },
+    {
+      "step": 80000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -8340.000132128596,
+      "cumulative_training_fitness": -1591035.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.026243564655305817,
+        "value_loss": 0.0006523126579850213,
+        "entropy_loss": -0.13754930207505822,
+        "explained_variance": 0.8123662173748016,
+        "approx_kl": 0.0009167995885945857,
+        "clip_fraction": 0.01865234375
+      }
+    },
+    {
+      "step": 85000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -8840.000139579177,
+      "cumulative_training_fitness": -1717884.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.023899379698559643,
+        "value_loss": 0.005711180980506469,
+        "entropy_loss": -0.08859771806746722,
+        "explained_variance": 0.857664629817009,
+        "approx_kl": 0.0008721505291759968,
+        "clip_fraction": 0.017626953125
+      }
+    },
+    {
+      "step": 90000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -9340.000147029757,
+      "cumulative_training_fitness": -1846283.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.015404382633278146,
+        "value_loss": 0.0002594352905106234,
+        "entropy_loss": -0.05682269320823252,
+        "explained_variance": 0.9470853507518768,
+        "approx_kl": 0.0002962741127703339,
+        "clip_fraction": 0.007861328125
+      }
+    },
+    {
+      "step": 95000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -9840.000154480338,
+      "cumulative_training_fitness": -1975332.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.011108976567629724,
+        "value_loss": 0.0001416937281149444,
+        "entropy_loss": -0.028691267827525735,
+        "explained_variance": 0.9473842829465866,
+        "approx_kl": 0.00022162156528793275,
+        "clip_fraction": 0.0056640625
+      }
+    },
+    {
+      "step": 100000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -10340.000161930919,
+      "cumulative_training_fitness": -2104881.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0022771457122871654,
+        "value_loss": 1.4850605250879556e-05,
+        "entropy_loss": -0.021926577622070908,
+        "explained_variance": 0.9943867353722453,
+        "approx_kl": 1.770368544384837e-05,
+        "clip_fraction": 0.000439453125
+      }
+    },
+    {
+      "step": 105000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -10840.0001693815,
+      "cumulative_training_fitness": -2231580.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.01377896512276493,
+        "value_loss": 0.0007983692509696994,
+        "entropy_loss": -0.046938076708465816,
+        "explained_variance": 0.9040988385677338,
+        "approx_kl": 0.0007208032766357064,
+        "clip_fraction": 0.008837890625
+      }
+    },
+    {
+      "step": 110000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -11340.00017683208,
+      "cumulative_training_fitness": -2361129.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.002635910140816122,
+        "value_loss": 5.4933288995701045e-05,
+        "entropy_loss": -0.0270602204836905,
+        "explained_variance": 0.9802746176719666,
+        "approx_kl": 6.301800021901727e-05,
+        "clip_fraction": 0.000830078125
+      }
+    },
+    {
+      "step": 115000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -11840.00018428266,
+      "cumulative_training_fitness": -2485528.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.018699824588838964,
+        "value_loss": 0.14515382442623376,
+        "entropy_loss": -0.08127905735746026,
+        "explained_variance": 0.8358692675828934,
+        "approx_kl": 0.006065921857953072,
+        "clip_fraction": 0.05263671875
+      }
+    },
+    {
+      "step": 120000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -12340.000191733241,
+      "cumulative_training_fitness": -2614377.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.015163996804039926,
+        "value_loss": 0.00024789578009176694,
+        "entropy_loss": -0.03322942464146763,
+        "explained_variance": 0.9239311516284943,
+        "approx_kl": 0.00036091674701310694,
+        "clip_fraction": 0.009912109375
+      }
+    },
+    {
+      "step": 125000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -12840.000199183822,
+      "cumulative_training_fitness": -2743626.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.009848018269985914,
+        "value_loss": 0.0005881254793955292,
+        "entropy_loss": -0.01955688650486991,
+        "explained_variance": 0.9799606632441282,
+        "approx_kl": 0.0001958180801011622,
+        "clip_fraction": 0.003662109375
+      }
+    },
+    {
+      "step": 130000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -13340.000206634402,
+      "cumulative_training_fitness": -2873275.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.005373881370178424,
+        "value_loss": 9.032404971172081e-05,
+        "entropy_loss": -0.013430314441211521,
+        "explained_variance": 0.9922341178171337,
+        "approx_kl": 6.972532719373703e-05,
+        "clip_fraction": 0.001708984375
+      }
+    },
+    {
+      "step": 135000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -13840.000214084983,
+      "cumulative_training_fitness": -3002924.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0026023938902653755,
+        "value_loss": 1.1540170787815996e-05,
+        "entropy_loss": -0.008481425693025813,
+        "explained_variance": 0.9960386455059052,
+        "approx_kl": 5.33266575075686e-05,
+        "clip_fraction": 0.000732421875
+      }
+    },
+    {
+      "step": 140000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -14340.000221535563,
+      "cumulative_training_fitness": -3130323.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.000816158001543954,
+        "value_loss": 0.0849855768843554,
+        "entropy_loss": -0.004526320559671148,
+        "explained_variance": 0.8593825250864029,
+        "approx_kl": 3.095928695984185e-05,
+        "clip_fraction": 0.000341796875
+      }
+    },
+    {
+      "step": 145000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -14840.000228986144,
+      "cumulative_training_fitness": -3257672.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0009551653747621458,
+        "value_loss": 0.08525303701171652,
+        "entropy_loss": -0.006483978522010147,
+        "explained_variance": 0.8723957389593124,
+        "approx_kl": 5.8181205531582236e-05,
+        "clip_fraction": 0.000390625
+      }
+    },
+    {
+      "step": 150000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -15340.000236436725,
+      "cumulative_training_fitness": -3387571.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -1.4590652426704764e-05,
+        "value_loss": 6.267913598632469e-06,
+        "entropy_loss": -0.003953422073391266,
+        "explained_variance": 0.9995597865781747,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 155000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -15840.000243887305,
+      "cumulative_training_fitness": -3517470.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -1.4235932030715049e-05,
+        "value_loss": 6.216375635437546e-07,
+        "entropy_loss": -0.0036243179754819723,
+        "explained_variance": 0.9999883214068177,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 160000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -16340.000251337886,
+      "cumulative_training_fitness": -3647369.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 1.6237099771387875e-06,
+        "value_loss": 8.204214972246972e-07,
+        "entropy_loss": -0.003154003465897404,
+        "explained_variance": 0.9999994891681467,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 165000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -16840.000258788466,
+      "cumulative_training_fitness": -3777268.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.001392128731822595,
+        "value_loss": 5.0144990776734845e-05,
+        "entropy_loss": -0.0041368119011167435,
+        "explained_variance": 0.9856314891949296,
+        "approx_kl": 3.982422640547156e-05,
+        "clip_fraction": 0.000390625
+      }
+    },
+    {
+      "step": 170000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -17340.000266239047,
+      "cumulative_training_fitness": -3907167.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0013487833552062512,
+        "value_loss": 8.233262091095206e-06,
+        "entropy_loss": -0.002761133952299133,
+        "explained_variance": 0.9980871145380661,
+        "approx_kl": 2.9179267585277557e-05,
+        "clip_fraction": 0.000390625
+      }
+    },
+    {
+      "step": 175000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -17840.000273689628,
+      "cumulative_training_fitness": -4037116.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 4.270963836461306e-06,
+        "value_loss": 0.000981102912144749,
+        "entropy_loss": -0.002137501272954978,
+        "explained_variance": 0.9999970729350025,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 180000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -18340.00028114021,
+      "cumulative_training_fitness": -4167065.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 1.5045079635456204e-06,
+        "value_loss": 6.330928418366195e-07,
+        "entropy_loss": -0.00297404368466232,
+        "explained_variance": 0.9999582317796012,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 185000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -18840.00028859079,
+      "cumulative_training_fitness": -4297014.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.001218071929179132,
+        "value_loss": 1.399524175653699e-05,
+        "entropy_loss": -0.005530282715335488,
+        "explained_variance": 0.9963322714902461,
+        "approx_kl": 2.616227720864117e-05,
+        "clip_fraction": 0.000390625
+      }
+    },
+    {
+      "step": 190000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -19340.00029604137,
+      "cumulative_training_fitness": -4426813.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004912398839951493,
+        "value_loss": 9.749763628437991e-05,
+        "entropy_loss": -0.007662737817736342,
+        "explained_variance": 0.9907345147803426,
+        "approx_kl": 0.00018407500465400517,
+        "clip_fraction": 0.001708984375
+      }
+    },
+    {
+      "step": 195000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -0.2,
+            "goal_reward": 30.0,
+            "step_penalty": -0.2
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -19840.00030349195,
+      "cumulative_training_fitness": -4556662.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0047761443682247775,
+        "value_loss": 0.00012045182856912362,
+        "entropy_loss": -0.005628899316070602,
+        "explained_variance": 0.9802266471087933,
+        "approx_kl": 0.00032877351623028517,
+        "clip_fraction": 0.001708984375
+      }
+    },
+    {
+      "step": 200000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -9.99999999999998,
+            "goal_reward": 1500.0,
+            "step_penalty": -9.99999999999998
+          },
+          "fitness": -100.0
+        },
+        {
+          "reward_components": {
+            "total": -9.99999999999998,
+            "goal_reward": 1500.0,
+            "step_penalty": -9.99999999999998
+          },
+          "fitness": -100.0
+        },
+        {
+          "reward_components": {
+            "total": -9.99999999999998,
+            "goal_reward": 1500.0,
+            "step_penalty": -9.99999999999998
+          },
+          "fitness": -100.0
+        }
+      ],
+      "cumulative_training_reward": -20340.00031094253,
+      "cumulative_training_fitness": -4670211.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 0.0026316262083128095,
+        "value_loss": 3.910224149011876e-05,
+        "entropy_loss": -0.05446184711763635,
+        "explained_variance": 0.9980947457952425,
+        "approx_kl": 0.05927206948399544,
+        "clip_fraction": 0.043505859375
+      }
+    }
+  ]
+}

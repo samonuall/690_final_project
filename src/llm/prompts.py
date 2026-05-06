@@ -38,6 +38,8 @@ def build_system_prompt(
 
 
 def extract_python_code(text: str) -> str | None:
+    if not text:
+        return None
     match = re.search(r"```python\n(.*?)```", text, re.DOTALL)
     return match.group(1).strip() if match else None
 

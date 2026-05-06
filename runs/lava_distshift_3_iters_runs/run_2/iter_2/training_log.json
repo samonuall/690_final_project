@@ -1,0 +1,2286 @@
+{
+  "total_timesteps": 200000,
+  "eval_freq": 5000,
+  "entries": [
+    {
+      "step": 5000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -15063.979838371277,
+      "cumulative_training_fitness": -22400.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03422255076584406,
+        "value_loss": 548.394344329834,
+        "entropy_loss": -1.334489753842354,
+        "explained_variance": 0.0003279447555541992,
+        "approx_kl": 0.015906458720564842,
+        "clip_fraction": 0.2125
+      }
+    },
+    {
+      "step": 10000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -29913.879671543837,
+      "cumulative_training_fitness": -59099.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.04213922967901453,
+        "value_loss": 216.33548069000244,
+        "entropy_loss": -1.1827320009469986,
+        "explained_variance": 0.0001583695411682129,
+        "approx_kl": 0.014349235221743584,
+        "clip_fraction": 0.190673828125
+      }
+    },
+    {
+      "step": 15000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -44809.49952214956,
+      "cumulative_training_fitness": -129298.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.04777376265847124,
+        "value_loss": 44.00665230751038,
+        "entropy_loss": -0.8304092571139335,
+        "explained_variance": 0.022730708122253418,
+        "approx_kl": 0.01091371476650238,
+        "clip_fraction": 0.118701171875
+      }
+    },
+    {
+      "step": 20000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -59891.45939555764,
+      "cumulative_training_fitness": -230647.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.041061277105472985,
+        "value_loss": 16.79332845211029,
+        "entropy_loss": -0.5588641300797462,
+        "explained_variance": 0.208854079246521,
+        "approx_kl": 0.010807694867253304,
+        "clip_fraction": 0.11865234375
+      }
+    },
+    {
+      "step": 25000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -75006.05928361416,
+      "cumulative_training_fitness": -346846.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03881908227631357,
+        "value_loss": 1.979303925484419,
+        "entropy_loss": -0.3144527949392796,
+        "explained_variance": 0.5951688587665558,
+        "approx_kl": 0.002885117195546627,
+        "clip_fraction": 0.0513671875
+      }
+    },
+    {
+      "step": 30000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -90113.75917825103,
+      "cumulative_training_fitness": -468545.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.031502038042526694,
+        "value_loss": 1.4103142961859703,
+        "entropy_loss": -0.21401646379381417,
+        "explained_variance": 0.6556421518325806,
+        "approx_kl": 0.0012214668095111847,
+        "clip_fraction": 0.034326171875
+      }
+    },
+    {
+      "step": 35000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -105216.50907760859,
+      "cumulative_training_fitness": -594244.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.022251840645913033,
+        "value_loss": 0.528125730715692,
+        "entropy_loss": -0.09458763347938656,
+        "explained_variance": 0.8203659802675247,
+        "approx_kl": 0.0005800123908556998,
+        "clip_fraction": 0.01904296875
+      }
+    },
+    {
+      "step": 40000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -120315.95898011327,
+      "cumulative_training_fitness": -722443.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.013661438468261622,
+        "value_loss": 0.29314577946206555,
+        "entropy_loss": -0.05764316795393824,
+        "explained_variance": 0.8882474973797798,
+        "approx_kl": 0.0003177568723913282,
+        "clip_fraction": 0.00947265625
+      }
+    },
+    {
+      "step": 45000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -135406.41888332367,
+      "cumulative_training_fitness": -851242.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.008239743279409595,
+        "value_loss": 0.30604753255465766,
+        "entropy_loss": -0.03197811467107385,
+        "explained_variance": 0.8837572559714317,
+        "approx_kl": 0.00041421022615395486,
+        "clip_fraction": 0.005419921875
+      }
+    },
+    {
+      "step": 50000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -150504.31878730655,
+      "cumulative_training_fitness": -980641.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006138416190515273,
+        "value_loss": 0.10357461661046727,
+        "entropy_loss": -0.016837154503446073,
+        "explained_variance": 0.9572571963071823,
+        "approx_kl": 0.000266052084043622,
+        "clip_fraction": 0.003369140625
+      }
+    },
+    {
+      "step": 55000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -165601.8686916232,
+      "cumulative_training_fitness": -1110340.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.002024448028532788,
+        "value_loss": 0.00937045066149409,
+        "entropy_loss": -0.00960842208005488,
+        "explained_variance": 0.9961426253430545,
+        "approx_kl": 9.914336260408163e-06,
+        "clip_fraction": 0.000634765625
+      }
+    },
+    {
+      "step": 60000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -180699.36859598756,
+      "cumulative_training_fitness": -1240089.0,
+      "ppo_stats": {
+        "policy_gradient_loss": 2.5821049348451197e-05,
+        "value_loss": 0.00019865407284340718,
+        "entropy_loss": -0.00707239379407838,
+        "explained_variance": 0.9999986954180713,
+        "approx_kl": 1.2558884918689728e-06,
+        "clip_fraction": 0.0
+      }
+    },
+    {
+      "step": 65000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -195797.1685000658,
+      "cumulative_training_fitness": -1369638.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006333996102330275,
+        "value_loss": 0.11577020824292958,
+        "entropy_loss": -0.012752444134093821,
+        "explained_variance": 0.952006958425045,
+        "approx_kl": 0.0007017168682068586,
+        "clip_fraction": 0.002880859375
+      }
+    },
+    {
+      "step": 70000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -210899.91839942336,
+      "cumulative_training_fitness": -1496237.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03373569554532878,
+        "value_loss": 5.4349472093573324e-05,
+        "entropy_loss": -0.34081497054430654,
+        "explained_variance": 0.9999920379204923,
+        "approx_kl": 0.09749864041805267,
+        "clip_fraction": 0.323876953125
+      }
+    },
+    {
+      "step": 75000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -226063.76824057102,
+      "cumulative_training_fitness": -1589486.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.09081873953691684,
+        "value_loss": 11.859961712360382,
+        "entropy_loss": -0.4968592032790184,
+        "explained_variance": 0.17080193758010864,
+        "approx_kl": 0.02843558043241501,
+        "clip_fraction": 0.471044921875
+      }
+    },
+    {
+      "step": 80000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -241184.46812281013,
+      "cumulative_training_fitness": -1705785.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03505076331784949,
+        "value_loss": 1.4166734270751475,
+        "entropy_loss": -0.17393005080521107,
+        "explained_variance": 0.6325501799583435,
+        "approx_kl": 0.0022094058804214,
+        "clip_fraction": 0.043115234375
+      }
+    },
+    {
+      "step": 85000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -256281.2780202031,
+      "cumulative_training_fitness": -1830634.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.021193305728957057,
+        "value_loss": 1.2299885671585797,
+        "entropy_loss": -0.11350875869393348,
+        "explained_variance": 0.6545408964157104,
+        "approx_kl": 0.001045834505930543,
+        "clip_fraction": 0.02216796875
+      }
+    },
+    {
+      "step": 90000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -271381.5779218972,
+      "cumulative_training_fitness": -1958583.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.01519901683786884,
+        "value_loss": 0.2484061373397708,
+        "entropy_loss": -0.06227274690754712,
+        "explained_variance": 0.9028178155422211,
+        "approx_kl": 0.000447796774096787,
+        "clip_fraction": 0.008447265625
+      }
+    },
+    {
+      "step": 95000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -286479.627825737,
+      "cumulative_training_fitness": -2088032.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004872921149944887,
+        "value_loss": 0.07352184742644567,
+        "entropy_loss": -0.012833570910152048,
+        "explained_variance": 0.9691872484982014,
+        "approx_kl": 0.00045392289757728577,
+        "clip_fraction": 0.00205078125
+      }
+    },
+    {
+      "step": 100000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -301628.37768122554,
+      "cumulative_training_fitness": -2190581.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.07841377068543806,
+        "value_loss": 12.907471895217896,
+        "entropy_loss": -0.4911758556962013,
+        "explained_variance": 0.14113259315490723,
+        "approx_kl": 0.03276169300079346,
+        "clip_fraction": 0.411669921875
+      }
+    },
+    {
+      "step": 105000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -316750.57756203413,
+      "cumulative_training_fitness": -2306530.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.032576090190559626,
+        "value_loss": 1.4384341634809972,
+        "entropy_loss": -0.17636242266744376,
+        "explained_variance": 0.6227986514568329,
+        "approx_kl": 0.002496708184480667,
+        "clip_fraction": 0.04072265625
+      }
+    },
+    {
+      "step": 110000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -331856.62745824456,
+      "cumulative_training_fitness": -2431429.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.02650211612926796,
+        "value_loss": 0.7767385296523571,
+        "entropy_loss": -0.1253782207146287,
+        "explained_variance": 0.7477410733699799,
+        "approx_kl": 0.0016161142848432064,
+        "clip_fraction": 0.02734375
+      }
+    },
+    {
+      "step": 115000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -346950.43735826015,
+      "cumulative_training_fitness": -2558328.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.013582324562594294,
+        "value_loss": 0.32845159210264685,
+        "entropy_loss": -0.051558442134410146,
+        "explained_variance": 0.8756558671593666,
+        "approx_kl": 0.001852804096415639,
+        "clip_fraction": 0.010400390625
+      }
+    },
+    {
+      "step": 120000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -362049.28726133704,
+      "cumulative_training_fitness": -2687277.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.011746840958949178,
+        "value_loss": 0.19074225204531103,
+        "entropy_loss": -0.02935457134153694,
+        "explained_variance": 0.922254778444767,
+        "approx_kl": 0.0002043985587079078,
+        "clip_fraction": 0.006396484375
+      }
+    },
+    {
+      "step": 125000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -377147.23716527224,
+      "cumulative_training_fitness": -2816626.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.007515300967497751,
+        "value_loss": 0.16980293489032192,
+        "entropy_loss": -0.010376168822403997,
+        "explained_variance": 0.9299785420298576,
+        "approx_kl": 0.0006838823901489377,
+        "clip_fraction": 0.004833984375
+      }
+    },
+    {
+      "step": 130000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -392244.8370695412,
+      "cumulative_training_fitness": -2946225.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006125570196309127,
+        "value_loss": 0.1002136008484797,
+        "entropy_loss": -0.011248186859302223,
+        "explained_variance": 0.9576772786676884,
+        "approx_kl": 0.00014985300367698073,
+        "clip_fraction": 0.002490234375
+      }
+    },
+    {
+      "step": 135000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -407342.1369740963,
+      "cumulative_training_fitness": -3075924.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0027197570219868795,
+        "value_loss": 0.013404377710770632,
+        "entropy_loss": -0.00876161177875474,
+        "explained_variance": 0.9943254948593676,
+        "approx_kl": 4.1538034565746784e-05,
+        "clip_fraction": 0.000732421875
+      }
+    },
+    {
+      "step": 140000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -422439.4368786514,
+      "cumulative_training_fitness": -3203323.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0013962805955088698,
+        "value_loss": 80.56035661697388,
+        "entropy_loss": -0.012762099166866391,
+        "explained_variance": 0.023158133029937744,
+        "approx_kl": 5.465911817736924e-05,
+        "clip_fraction": 0.000244140625
+      }
+    },
+    {
+      "step": 145000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -437538.48678153753,
+      "cumulative_training_fitness": -3332122.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00851790521555813,
+        "value_loss": 0.4066951383036212,
+        "entropy_loss": -0.051185690355487166,
+        "explained_variance": 0.8500553071498871,
+        "approx_kl": 0.0005806738627143204,
+        "clip_fraction": 0.008056640625
+      }
+    },
+    {
+      "step": 150000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -452637.13668480515,
+      "cumulative_training_fitness": -3460921.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004951219144277275,
+        "value_loss": 0.11613996358837539,
+        "entropy_loss": -0.028265388403087854,
+        "explained_variance": 0.951767809689045,
+        "approx_kl": 0.00010667686001397669,
+        "clip_fraction": 0.002587890625
+      }
+    },
+    {
+      "step": 155000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -467735.73658812046,
+      "cumulative_training_fitness": -3590120.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.009016858210088685,
+        "value_loss": 0.09157132933243588,
+        "entropy_loss": -0.025031984341330825,
+        "explained_variance": 0.9620283767580986,
+        "approx_kl": 0.0001306349877268076,
+        "clip_fraction": 0.004150390625
+      }
+    },
+    {
+      "step": 160000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -482833.8364919126,
+      "cumulative_training_fitness": -3719319.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004731737481779419,
+        "value_loss": 0.10326826953012187,
+        "entropy_loss": -0.017834257811773568,
+        "explained_variance": 0.9576747752726078,
+        "approx_kl": 0.0003420831053517759,
+        "clip_fraction": 0.002490234375
+      }
+    },
+    {
+      "step": 165000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -497931.4363961816,
+      "cumulative_training_fitness": -3849018.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.003381797840120271,
+        "value_loss": 0.0473745758649784,
+        "entropy_loss": -0.011777082970365883,
+        "explained_variance": 0.9801175724714994,
+        "approx_kl": 4.589202580973506e-05,
+        "clip_fraction": 0.001025390625
+      }
+    },
+    {
+      "step": 170000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -513068.0862632096,
+      "cumulative_training_fitness": -3958067.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.051157767075346784,
+        "value_loss": 22.4036737203598,
+        "entropy_loss": -0.5389671914279461,
+        "explained_variance": 0.08328884840011597,
+        "approx_kl": 0.03162997215986252,
+        "clip_fraction": 0.50712890625
+      }
+    },
+    {
+      "step": 175000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -528222.5361132622,
+      "cumulative_training_fitness": -4057666.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.08970099608413876,
+        "value_loss": 7.668269163370132,
+        "entropy_loss": -0.38252813592553137,
+        "explained_variance": 0.2328137755393982,
+        "approx_kl": 0.024056915193796158,
+        "clip_fraction": 0.3919921875
+      }
+    },
+    {
+      "step": 180000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -543336.3360020816,
+      "cumulative_training_fitness": -4178165.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.03643664526753128,
+        "value_loss": 1.6693209044635295,
+        "entropy_loss": -0.17753987601026894,
+        "explained_variance": 0.5876589119434357,
+        "approx_kl": 0.0030303513631224632,
+        "clip_fraction": 0.04931640625
+      }
+    },
+    {
+      "step": 185000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -558440.635899961,
+      "cumulative_training_fitness": -4303964.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.024542178388219326,
+        "value_loss": 0.7070073682814837,
+        "entropy_loss": -0.09846850475296379,
+        "explained_variance": 0.7639427483081818,
+        "approx_kl": 0.002647978952154517,
+        "clip_fraction": 0.024462890625
+      }
+    },
+    {
+      "step": 190000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -573542.1358005106,
+      "cumulative_training_fitness": -4431463.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.01927562530618161,
+        "value_loss": 0.25612130025401714,
+        "entropy_loss": -0.059457467310130595,
+        "explained_variance": 0.8997062668204308,
+        "approx_kl": 0.0009550788090564311,
+        "clip_fraction": 0.0142578125
+      }
+    },
+    {
+      "step": 195000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -588640.585703969,
+      "cumulative_training_fitness": -4560562.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.007822147567640058,
+        "value_loss": 0.12914481870830058,
+        "entropy_loss": -0.03157522568944841,
+        "explained_variance": 0.9464609771966934,
+        "approx_kl": 0.0001262795994989574,
+        "clip_fraction": 0.0029296875
+      }
+    },
+    {
+      "step": 200000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        },
+        {
+          "reward_components": {
+            "total": -6.04,
+            "goal_reward": 0.0,
+            "hazard_penalty": -6.0,
+            "survival_bonus": 0.0,
+            "distance_reward": 0.0,
+            "proximity_penalty": 0.0,
+            "step_penalty": -0.04,
+            "noop_penalty": 0.0,
+            "wall_penalty": 0.0
+          },
+          "fitness": -52.0
+        }
+      ],
+      "cumulative_training_reward": -603738.3356080949,
+      "cumulative_training_fitness": -4690061.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0021708001120714472,
+        "value_loss": 0.02297522181053111,
+        "entropy_loss": -0.023877530242316425,
+        "explained_variance": 0.9905984094366431,
+        "approx_kl": 2.26433330681175e-05,
+        "clip_fraction": 0.00068359375
+      }
+    }
+  ]
+}

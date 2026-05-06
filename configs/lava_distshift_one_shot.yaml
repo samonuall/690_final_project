@@ -4,7 +4,7 @@ output_dir: runs/lava_distshift_one_shot
 ppo:
   total_timesteps: 200000
   eval_freq: 5000
-  eval_episodes: 5
+  eval_episodes: 3
   net_arch: [64, 64]
   learning_rate: 0.0003
   n_steps: 2048
