@@ -3,7 +3,7 @@ ai-safety-gridworlds/
 __pycache__/
 **/__pycache__/
 **/*.log
-runs/
+**/*.zip
 690_final_project.egg-info
 .env
 

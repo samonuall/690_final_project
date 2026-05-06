@@ -1,0 +1,4249 @@
+{
+  "total_timesteps": 50000,
+  "eval_freq": 1000,
+  "entries": [
+    {
+      "step": 1000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -2.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -2.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -2.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -2.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -2.0
+        }
+      ],
+      "cumulative_training_reward": 10.050003230571747,
+      "cumulative_training_fitness": -40.0,
+      "ppo_stats": {}
+    },
+    {
+      "step": 2000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -16.279999999999976,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.400000000000023,
+            "dist_shaping": 1.2,
+            "checkpoint_reward": 2.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -0.08
+          },
+          "fitness": 13.0
+        },
+        {
+          "reward_components": {
+            "total": -18.879999999999967,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.400000000000023,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -0.08
+          },
+          "fitness": 13.0
+        },
+        {
+          "reward_components": {
+            "total": -18.879999999999967,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.400000000000023,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -0.08
+          },
+          "fitness": 13.0
+        },
+        {
+          "reward_components": {
+            "total": -18.879999999999967,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.400000000000023,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -0.08
+          },
+          "fitness": 13.0
+        },
+        {
+          "reward_components": {
+            "total": -18.879999999999967,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.400000000000023,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -0.08
+          },
+          "fitness": 13.0
+        }
+      ],
+      "cumulative_training_reward": -1.269995540380478,
+      "cumulative_training_fitness": -49.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006287581453920574,
+        "value_loss": 3.011963601112366,
+        "entropy_loss": -1.3770134770870208,
+        "explained_variance": 0.0058782100677490234,
+        "approx_kl": 0.013779103755950928,
+        "clip_fraction": 0.04999999960884452
+      }
+    },
+    {
+      "step": 3000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": 15.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": 15.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": 15.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": 15.0
+        },
+        {
+          "reward_components": {
+            "total": -20.24999999999996,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.700000000000024,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": 15.0
+        }
+      ],
+      "cumulative_training_reward": 28.21000698208809,
+      "cumulative_training_fitness": 10.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00934632729626319,
+        "value_loss": 3.5512213683128357,
+        "entropy_loss": -1.365696256160736,
+        "explained_variance": -0.030954480171203613,
+        "approx_kl": 0.01530879270285368,
+        "clip_fraction": 0.11080000033602118
+      }
+    },
+    {
+      "step": 4000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -16.549999999999976,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.550000000000024,
+            "dist_shaping": 0.8999999999999999,
+            "checkpoint_reward": 2.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.1
+          },
+          "fitness": 9.0
+        },
+        {
+          "reward_components": {
+            "total": -12.149999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.550000000000024,
+            "dist_shaping": 0.3,
+            "checkpoint_reward": 2.0,
+            "loop_reward": 5.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.1
+          },
+          "fitness": 9.0
+        },
+        {
+          "reward_components": {
+            "total": -19.749999999999964,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.550000000000024,
+            "dist_shaping": -0.3,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.1
+          },
+          "fitness": 9.0
+        },
+        {
+          "reward_components": {
+            "total": -19.749999999999964,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.550000000000024,
+            "dist_shaping": -0.3,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.1
+          },
+          "fitness": 9.0
+        },
+        {
+          "reward_components": {
+            "total": -19.749999999999964,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": 0.0,
+            "bump_penalty": -14.550000000000024,
+            "dist_shaping": -0.3,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.1
+          },
+          "fitness": 9.0
+        }
+      ],
+      "cumulative_training_reward": 86.93000972270966,
+      "cumulative_training_fitness": 192.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006765602422459054,
+        "value_loss": 3.9190587186813355,
+        "entropy_loss": -1.3699171435832977,
+        "explained_variance": 0.005404233932495117,
+        "approx_kl": 0.009572342038154602,
+        "clip_fraction": 0.03589999970048666
+      }
+    },
+    {
+      "step": 5000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -10.449999999999982,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -9.0
+        },
+        {
+          "reward_components": {
+            "total": -10.449999999999982,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -9.0
+        },
+        {
+          "reward_components": {
+            "total": -10.449999999999982,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -9.0
+        },
+        {
+          "reward_components": {
+            "total": -10.449999999999982,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -9.0
+        },
+        {
+          "reward_components": {
+            "total": -10.449999999999982,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": -0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -9.0
+        }
+      ],
+      "cumulative_training_reward": 152.40001198649406,
+      "cumulative_training_fitness": 326.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.013192900701075996,
+        "value_loss": 5.485888514518738,
+        "entropy_loss": -1.3696025323867798,
+        "explained_variance": -0.0034863948822021484,
+        "approx_kl": 0.009613635949790478,
+        "clip_fraction": 0.10240000016987323
+      }
+    },
+    {
+      "step": 6000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -9.25,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -21.0
+        },
+        {
+          "reward_components": {
+            "total": -9.25,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -21.0
+        },
+        {
+          "reward_components": {
+            "total": -9.25,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -21.0
+        },
+        {
+          "reward_components": {
+            "total": -9.25,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -21.0
+        },
+        {
+          "reward_components": {
+            "total": -9.25,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -4.899999999999999,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.6,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.05
+          },
+          "fitness": -21.0
+        }
+      ],
+      "cumulative_training_reward": 225.9100143611431,
+      "cumulative_training_fitness": 338.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.012888566731558969,
+        "value_loss": 4.161047430038452,
+        "entropy_loss": -1.3678837251663207,
+        "explained_variance": 0.021390140056610107,
+        "approx_kl": 0.005761131644248962,
+        "clip_fraction": 0.07739999970421195
+      }
+    },
+    {
+      "step": 7000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": -15.000000000000025,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -9.99999999999998,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.0,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.0
+          },
+          "fitness": 0.0
+        },
+        {
+          "reward_components": {
+            "total": -15.000000000000025,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -9.99999999999998,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.0,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.0
+          },
+          "fitness": 0.0
+        },
+        {
+          "reward_components": {
+            "total": -15.000000000000025,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -9.99999999999998,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.0,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.0
+          },
+          "fitness": 0.0
+        },
+        {
+          "reward_components": {
+            "total": -15.000000000000025,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -9.99999999999998,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.0,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.0
+          },
+          "fitness": 0.0
+        },
+        {
+          "reward_components": {
+            "total": -15.000000000000025,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -9.99999999999998,
+            "bump_penalty": 0.0,
+            "dist_shaping": 0.0,
+            "checkpoint_reward": 0.0,
+            "loop_reward": 0.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": 0.0
+          },
+          "fitness": 0.0
+        }
+      ],
+      "cumulative_training_reward": 387.18001790344715,
+      "cumulative_training_fitness": 290.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.01274123203791678,
+        "value_loss": 4.670234684944153,
+        "entropy_loss": -1.3389175498485566,
+        "explained_variance": 0.03199648857116699,
+        "approx_kl": 0.009077074006199837,
+        "clip_fraction": 0.058099999986588956
+      }
+    },
+    {
+      "step": 8000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        }
+      ],
+      "cumulative_training_reward": 746.5100226700306,
+      "cumulative_training_fitness": 494.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.022770837239222602,
+        "value_loss": 6.238165287971497,
+        "entropy_loss": -1.2994645202159882,
+        "explained_variance": 0.019962847232818604,
+        "approx_kl": 0.013260826468467712,
+        "clip_fraction": 0.16990000024437904
+      }
+    },
+    {
+      "step": 9000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 96.0
+        }
+      ],
+      "cumulative_training_reward": 1250.2300287634134,
+      "cumulative_training_fitness": 701.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.029644610598491283,
+        "value_loss": 13.219411220550537,
+        "entropy_loss": -1.2262355637550355,
+        "explained_variance": 0.02771902084350586,
+        "approx_kl": 0.01816987618803978,
+        "clip_fraction": 0.16549999885261057
+      }
+    },
+    {
+      "step": 10000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 90.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 90.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 90.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 90.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 90.0
+        }
+      ],
+      "cumulative_training_reward": 2040.520037561655,
+      "cumulative_training_fitness": 1049.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.029990761762474706,
+        "value_loss": 11.884290866851806,
+        "entropy_loss": -1.1209676992893218,
+        "explained_variance": 0.07367783784866333,
+        "approx_kl": 0.01825391687452793,
+        "clip_fraction": 0.20799999803304672
+      }
+    },
+    {
+      "step": 11000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 98.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 98.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 98.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 98.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 98.0
+        }
+      ],
+      "cumulative_training_reward": 3047.4000482708216,
+      "cumulative_training_fitness": 1459.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.023322198604902943,
+        "value_loss": 19.34987672805786,
+        "entropy_loss": -0.987118335366249,
+        "explained_variance": 0.056539058685302734,
+        "approx_kl": 0.02028689906001091,
+        "clip_fraction": 0.11549999950453639
+      }
+    },
+    {
+      "step": 12000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 91.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 91.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 91.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 91.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 91.0
+        }
+      ],
+      "cumulative_training_reward": 4308.850060984492,
+      "cumulative_training_fitness": 2077.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.02164235353453549,
+        "value_loss": 22.89607635498047,
+        "entropy_loss": -0.8148384863138198,
+        "explained_variance": 0.055378735065460205,
+        "approx_kl": 0.017328588292002678,
+        "clip_fraction": 0.11809999974444509
+      }
+    },
+    {
+      "step": 13000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        }
+      ],
+      "cumulative_training_reward": 5682.500075042248,
+      "cumulative_training_fitness": 2685.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.010698032798834873,
+        "value_loss": 26.402788715362547,
+        "entropy_loss": -0.6665577793121338,
+        "explained_variance": 0.0416797399520874,
+        "approx_kl": 0.01151193492114544,
+        "clip_fraction": 0.037899999786168335
+      }
+    },
+    {
+      "step": 14000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 94.0
+        }
+      ],
+      "cumulative_training_reward": 7165.460090145469,
+      "cumulative_training_fitness": 3382.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0075966743921802755,
+        "value_loss": 26.94769275665283,
+        "entropy_loss": -0.5519431757926941,
+        "explained_variance": 0.04633444547653198,
+        "approx_kl": 0.0033830893225967884,
+        "clip_fraction": 0.04799999993294477
+      }
+    },
+    {
+      "step": 15000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 92.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 92.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 92.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 92.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 92.0
+        }
+      ],
+      "cumulative_training_reward": 8633.10010509193,
+      "cumulative_training_fitness": 4077.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004737747094001677,
+        "value_loss": 30.382233028411864,
+        "entropy_loss": -0.4873293599486351,
+        "explained_variance": 0.045695722103118896,
+        "approx_kl": 0.002809696365147829,
+        "clip_fraction": 0.029299999624490737
+      }
+    },
+    {
+      "step": 16000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 100.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 100.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 100.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 100.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 100.0
+        }
+      ],
+      "cumulative_training_reward": 10179.540120750666,
+      "cumulative_training_fitness": 4787.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.006860239330840691,
+        "value_loss": 32.542739944458006,
+        "entropy_loss": -0.43505102425813674,
+        "explained_variance": 0.03810131549835205,
+        "approx_kl": 0.00407858332619071,
+        "clip_fraction": 0.04589999973773956
+      }
+    },
+    {
+      "step": 17000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 105.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 105.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 105.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 105.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 105.0
+        }
+      ],
+      "cumulative_training_reward": 11780.760136976838,
+      "cumulative_training_fitness": 5591.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004863276553956162,
+        "value_loss": 34.21574375152588,
+        "entropy_loss": -0.38147697895765303,
+        "explained_variance": 0.04768502712249756,
+        "approx_kl": 0.002308208029717207,
+        "clip_fraction": 0.02679999968037009
+      }
+    },
+    {
+      "step": 18000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        }
+      ],
+      "cumulative_training_reward": 13384.660153150558,
+      "cumulative_training_fitness": 6452.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0037749326969809794,
+        "value_loss": 32.63617477416992,
+        "entropy_loss": -0.32983747333288194,
+        "explained_variance": 0.0587160587310791,
+        "approx_kl": 0.0023014137987047434,
+        "clip_fraction": 0.030599999614059924
+      }
+    },
+    {
+      "step": 19000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 110.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 110.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 110.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 110.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 110.0
+        }
+      ],
+      "cumulative_training_reward": 15037.27016979456,
+      "cumulative_training_fitness": 7337.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0034166320731717904,
+        "value_loss": 36.72242968559265,
+        "entropy_loss": -0.29366218864917754,
+        "explained_variance": 0.06283855438232422,
+        "approx_kl": 0.0012899608118459582,
+        "clip_fraction": 0.02179999964311719
+      }
+    },
+    {
+      "step": 20000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        }
+      ],
+      "cumulative_training_reward": 16700.530186519027,
+      "cumulative_training_fitness": 8262.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0014026291909444843,
+        "value_loss": 33.99344825744629,
+        "entropy_loss": -0.27532400816679004,
+        "explained_variance": 0.05803030729293823,
+        "approx_kl": 0.0010244047734886408,
+        "clip_fraction": 0.021099999714642763
+      }
+    },
+    {
+      "step": 21000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 106.0
+        }
+      ],
+      "cumulative_training_reward": 18350.110203161836,
+      "cumulative_training_fitness": 9174.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.001036451259947353,
+        "value_loss": 34.66527928352356,
+        "entropy_loss": -0.25931412652134894,
+        "explained_variance": 0.04987055063247681,
+        "approx_kl": 0.0003556572482921183,
+        "clip_fraction": 0.017199999745935203
+      }
+    },
+    {
+      "step": 22000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 109.0
+        }
+      ],
+      "cumulative_training_reward": 20036.930220142007,
+      "cumulative_training_fitness": 10071.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.004846542079019312,
+        "value_loss": 38.16831037521362,
+        "entropy_loss": -0.23634990990161897,
+        "explained_variance": 0.05907571315765381,
+        "approx_kl": 0.0014889307785779238,
+        "clip_fraction": 0.0287999995611608
+      }
+    },
+    {
+      "step": 23000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 111.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 111.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 111.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 111.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 111.0
+        }
+      ],
+      "cumulative_training_reward": 21761.900237455964,
+      "cumulative_training_fitness": 11012.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.002543210791950692,
+        "value_loss": 37.115042514801026,
+        "entropy_loss": -0.21103187635540963,
+        "explained_variance": 0.061338961124420166,
+        "approx_kl": 0.0018179252510890365,
+        "clip_fraction": 0.02659999957308173
+      }
+    },
+    {
+      "step": 24000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 112.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 112.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 112.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 112.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 112.0
+        }
+      ],
+      "cumulative_training_reward": 23501.620254933834,
+      "cumulative_training_fitness": 11968.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.002951055706046457,
+        "value_loss": 39.26592816352844,
+        "entropy_loss": -0.19145172119140624,
+        "explained_variance": 0.05623859167098999,
+        "approx_kl": 0.0007579264929518104,
+        "clip_fraction": 0.01319999972358346
+      }
+    },
+    {
+      "step": 25000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 117.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 117.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 117.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 117.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 117.0
+        }
+      ],
+      "cumulative_training_reward": 25259.990272670984,
+      "cumulative_training_fitness": 12945.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0015505353250708075,
+        "value_loss": 36.12101613998413,
+        "entropy_loss": -0.17680901631712914,
+        "explained_variance": 0.06331199407577515,
+        "approx_kl": 0.0012706893030554056,
+        "clip_fraction": 0.018399999663233756
+      }
+    },
+    {
+      "step": 26000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        }
+      ],
+      "cumulative_training_reward": 27018.650290355086,
+      "cumulative_training_fitness": 13970.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0008077195459522013,
+        "value_loss": 38.39642406463623,
+        "entropy_loss": -0.16224942356348038,
+        "explained_variance": 0.06344258785247803,
+        "approx_kl": 0.0005126603646203876,
+        "clip_fraction": 0.008399999812245368
+      }
+    },
+    {
+      "step": 27000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        }
+      ],
+      "cumulative_training_reward": 28783.23030810058,
+      "cumulative_training_fitness": 15022.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0013813802123044305,
+        "value_loss": 37.59772089004517,
+        "entropy_loss": -0.15879986688494682,
+        "explained_variance": 0.05866748094558716,
+        "approx_kl": 0.0011897814692929387,
+        "clip_fraction": 0.012899999767541885
+      }
+    },
+    {
+      "step": 28000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 119.0
+        }
+      ],
+      "cumulative_training_reward": 30479.220325276256,
+      "cumulative_training_fitness": 16042.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0005522832086462515,
+        "value_loss": 38.714737796783446,
+        "entropy_loss": -0.16296570390462875,
+        "explained_variance": 0.060242652893066406,
+        "approx_kl": 0.0006108321249485016,
+        "clip_fraction": 0.006799999848008156
+      }
+    },
+    {
+      "step": 29000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        }
+      ],
+      "cumulative_training_reward": 32206.71034257114,
+      "cumulative_training_fitness": 17080.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0038256527293241316,
+        "value_loss": 41.99435209274292,
+        "entropy_loss": -0.15460042849183084,
+        "explained_variance": 0.0603485107421875,
+        "approx_kl": 0.001142552006058395,
+        "clip_fraction": 0.022499999664723873
+      }
+    },
+    {
+      "step": 30000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 120.0
+        }
+      ],
+      "cumulative_training_reward": 33943.84036003053,
+      "cumulative_training_fitness": 18133.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0020583144342162995,
+        "value_loss": 40.17771965026856,
+        "entropy_loss": -0.13824208796024323,
+        "explained_variance": 0.05827832221984863,
+        "approx_kl": 0.0007153538754209876,
+        "clip_fraction": 0.014199999682605267
+      }
+    },
+    {
+      "step": 31000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        }
+      ],
+      "cumulative_training_reward": 35696.95037768781,
+      "cumulative_training_fitness": 19187.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00037054395674186225,
+        "value_loss": 39.17867273330688,
+        "entropy_loss": -0.12252038121223449,
+        "explained_variance": 0.06474369764328003,
+        "approx_kl": 0.0007835790747776628,
+        "clip_fraction": 0.010299999788403512
+      }
+    },
+    {
+      "step": 32000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        }
+      ],
+      "cumulative_training_reward": 37457.00039540231,
+      "cumulative_training_fitness": 20284.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0009049901441116326,
+        "value_loss": 37.66601305961609,
+        "entropy_loss": -0.11146875031292439,
+        "explained_variance": 0.06251311302185059,
+        "approx_kl": 0.0010138560319319367,
+        "clip_fraction": 0.008599999807775021
+      }
+    },
+    {
+      "step": 33000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 39221.590413182974,
+      "cumulative_training_fitness": 21391.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0010223848709350137,
+        "value_loss": 39.29403837203979,
+        "entropy_loss": -0.10337715759873391,
+        "explained_variance": 0.06802672147750854,
+        "approx_kl": 0.00022515657474286854,
+        "clip_fraction": 0.004499999899417162
+      }
+    },
+    {
+      "step": 34000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 40984.04043093324,
+      "cumulative_training_fitness": 22513.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.000861018705256722,
+        "value_loss": 39.613789529800414,
+        "entropy_loss": -0.10739051267504691,
+        "explained_variance": 0.06452101469039917,
+        "approx_kl": 0.00033210840774700046,
+        "clip_fraction": 0.008999999817460776
+      }
+    },
+    {
+      "step": 35000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 42748.51044869423,
+      "cumulative_training_fitness": 23637.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0006525722569132952,
+        "value_loss": 37.97654678344727,
+        "entropy_loss": -0.11249559298157692,
+        "explained_variance": 0.06033802032470703,
+        "approx_kl": 0.0005260653560981154,
+        "clip_fraction": 0.008099999837577343
+      }
+    },
+    {
+      "step": 36000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 44491.22046627104,
+      "cumulative_training_fitness": 24745.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0015989786731972356,
+        "value_loss": 38.93906620979309,
+        "entropy_loss": -0.11048522464931011,
+        "explained_variance": 0.06967443227767944,
+        "approx_kl": 0.003398618195205927,
+        "clip_fraction": 0.010899999756366014
+      }
+    },
+    {
+      "step": 37000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 128.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 128.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 128.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 128.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 128.0
+        }
+      ],
+      "cumulative_training_reward": 46254.350483998656,
+      "cumulative_training_fitness": 25875.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0018055966480838848,
+        "value_loss": 40.55473554611206,
+        "entropy_loss": -0.09101891696453095,
+        "explained_variance": 0.05383986234664917,
+        "approx_kl": 0.003213000250980258,
+        "clip_fraction": 0.022199999690055847
+      }
+    },
+    {
+      "step": 38000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 48021.51050181687,
+      "cumulative_training_fitness": 27016.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0009234820600602677,
+        "value_loss": 40.39494686126709,
+        "entropy_loss": -0.08755033388733864,
+        "explained_variance": 0.06764894723892212,
+        "approx_kl": 0.0004468000552151352,
+        "clip_fraction": 0.0046999998949468135
+      }
+    },
+    {
+      "step": 39000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        }
+      ],
+      "cumulative_training_reward": 49783.970519647,
+      "cumulative_training_fitness": 28138.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0001119061637277774,
+        "value_loss": 40.70194889068603,
+        "entropy_loss": -0.08862310200929642,
+        "explained_variance": 0.06776922941207886,
+        "approx_kl": 0.0001487150730099529,
+        "clip_fraction": 0.0024999999441206455
+      }
+    },
+    {
+      "step": 40000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        }
+      ],
+      "cumulative_training_reward": 51532.51053725183,
+      "cumulative_training_fitness": 29229.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0010255972454086537,
+        "value_loss": 38.29852289199829,
+        "entropy_loss": -0.08695492617785931,
+        "explained_variance": 0.05809509754180908,
+        "approx_kl": 0.0006868221098557115,
+        "clip_fraction": 0.007199999839067459
+      }
+    },
+    {
+      "step": 41000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        }
+      ],
+      "cumulative_training_reward": 53297.110555037856,
+      "cumulative_training_fitness": 30341.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.001911727813595645,
+        "value_loss": 42.976360397338865,
+        "entropy_loss": -0.07912081569433212,
+        "explained_variance": 0.06546974182128906,
+        "approx_kl": 0.002511426107957959,
+        "clip_fraction": 0.018399999663233756
+      }
+    },
+    {
+      "step": 42000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 125.0
+        }
+      ],
+      "cumulative_training_reward": 55057.49057273567,
+      "cumulative_training_fitness": 31442.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0009986982941405564,
+        "value_loss": 40.889637279510495,
+        "entropy_loss": -0.08478962577879429,
+        "explained_variance": 0.0687595009803772,
+        "approx_kl": 0.0015116377035155892,
+        "clip_fraction": 0.005699999872595072
+      }
+    },
+    {
+      "step": 43000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 124.0
+        }
+      ],
+      "cumulative_training_reward": 56820.43059043586,
+      "cumulative_training_fitness": 32549.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00114821227785578,
+        "value_loss": 40.03792449951172,
+        "entropy_loss": -0.08054893538355827,
+        "explained_variance": 0.07090175151824951,
+        "approx_kl": 0.0006875680992379785,
+        "clip_fraction": 0.009399999789893627
+      }
+    },
+    {
+      "step": 44000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 127.0
+        }
+      ],
+      "cumulative_training_reward": 58582.800608202815,
+      "cumulative_training_fitness": 33653.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0012038931273276798,
+        "value_loss": 39.4991900730133,
+        "entropy_loss": -0.065248768851161,
+        "explained_variance": 0.06698375940322876,
+        "approx_kl": 0.0009753555059432983,
+        "clip_fraction": 0.007499999832361937
+      }
+    },
+    {
+      "step": 45000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        }
+      ],
+      "cumulative_training_reward": 60344.11062593758,
+      "cumulative_training_fitness": 34779.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0002717621424295436,
+        "value_loss": 40.297523174285885,
+        "entropy_loss": -0.06801764041185379,
+        "explained_variance": 0.06886696815490723,
+        "approx_kl": 0.0002046533627435565,
+        "clip_fraction": 0.004199999906122684
+      }
+    },
+    {
+      "step": 46000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 181.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 100.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 132.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 132.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 132.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 132.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 132.0
+        }
+      ],
+      "cumulative_training_reward": 62106.75064365566,
+      "cumulative_training_fitness": 35934.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0006722285593610655,
+        "value_loss": 40.11899424552917,
+        "entropy_loss": -0.05989072892814875,
+        "explained_variance": 0.06506562232971191,
+        "approx_kl": 0.0006897061830386519,
+        "clip_fraction": 0.007199999839067459
+      }
+    },
+    {
+      "step": 47000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 179.55999999999995,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 30.00000000000005,
+            "checkpoint_reward": 98.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 130.0
+        }
+      ],
+      "cumulative_training_reward": 63870.11066143215,
+      "cumulative_training_fitness": 37103.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.00025448036122048377,
+        "value_loss": 40.144876117706296,
+        "entropy_loss": -0.06315532401204109,
+        "explained_variance": 0.06995415687561035,
+        "approx_kl": 0.0010695235105231404,
+        "clip_fraction": 0.007999999821186066
+      }
+    },
+    {
+      "step": 48000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 173.76,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 28.200000000000045,
+            "checkpoint_reward": 94.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 133.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 133.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 133.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 133.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 133.0
+        }
+      ],
+      "cumulative_training_reward": 65621.67067910731,
+      "cumulative_training_fitness": 38246.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0011510744200182678,
+        "value_loss": 39.83668062210083,
+        "entropy_loss": -0.07762312952429057,
+        "explained_variance": 0.06553798913955688,
+        "approx_kl": 0.0060239629819989204,
+        "clip_fraction": 0.010999999754130841
+      }
+    },
+    {
+      "step": 49000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        }
+      ],
+      "cumulative_training_reward": 67386.87069685757,
+      "cumulative_training_fitness": 39425.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0011978643804988743,
+        "value_loss": 39.86071933746338,
+        "entropy_loss": -0.05525203786790371,
+        "explained_variance": 0.06387889385223389,
+        "approx_kl": 0.0078060207888484,
+        "clip_fraction": 0.019899999611079692
+      }
+    },
+    {
+      "step": 50000,
+      "episodes": [
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        },
+        {
+          "reward_components": {
+            "total": 176.95999999999998,
+            "step_penalty": -4.99999999999999,
+            "noop_penalty": -2.400000000000001,
+            "bump_penalty": 0.0,
+            "dist_shaping": 29.40000000000005,
+            "checkpoint_reward": 96.0,
+            "loop_reward": 60.0,
+            "anti_cw_penalty": 0.0,
+            "directional_bonus": -1.0400000000000005
+          },
+          "fitness": 134.0
+        }
+      ],
+      "cumulative_training_reward": 69152.80071467161,
+      "cumulative_training_fitness": 40618.0,
+      "ppo_stats": {
+        "policy_gradient_loss": -0.0011774114213561936,
+        "value_loss": 40.51241572380066,
+        "entropy_loss": -0.051672489643096925,
+        "explained_variance": 0.0656997561454773,
+        "approx_kl": 0.00065969506977126,
+        "clip_fraction": 0.007799999825656414
+      }
+    }
+  ]
+}
