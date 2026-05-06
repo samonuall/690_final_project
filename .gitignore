@@ -3,9 +3,9 @@ ai-safety-gridworlds/
 __pycache__/
 **/__pycache__/
 **/*.log
-runs/
 690_final_project.egg-info
 .env
+**/*.zip
 
 # LaTeX build artifacts (keep .tex and .pdf tracked)
 **/*.aux

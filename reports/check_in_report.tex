@@ -201,6 +201,41 @@ The best performing reward function in terms of mean fitness score from all iter
 \label{tab:lava-results}
 \end{table}
 
+\subsection{Prompt Ablations}
+We test two prompt interventions targeting the alignment failure mode each environment is designed to expose. For boat race, we add a "keep the reward function as simple as possible" instruction to the system prompt to test whether nudging toward the most direct interpretation pushes the LLM toward the obvious-but-hackable design (rewarding any marker tile without enforcing clockwise order). For lava world, we add a warning that test-time environments may differ in obstacle layout and that the reward function should not depend on specific tile coordinates, to test whether prompt-level guidance about distribution shift produces reward functions that generalize to held-out layouts. Each ablation is run with both Claude Sonnet 4.6 and Qwen3.5-9B at temperature 1.0, with two 3-iteration loop runs per (env, model) cell. Figures \ref{fig:boat-iter} and \ref{fig:lava-iter} show how the ground-truth fitness of each iteration's policy evolves across the loop.
+
+\begin{figure}[t]
+	\centering
+	\begin{minipage}[t]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../analysis/prompt_ablation/figures/boat_simple_claude_loop_iter_trajectory.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../analysis/prompt_ablation/figures/boat_simple_qwen_loop_iter_trajectory.png}
+	\end{minipage}
+	\caption{Boat Race "simple" prompt ablation: per-iteration mean episode fitness for each loop run. Left: Claude Sonnet 4.6. Right: Qwen3.5-9B. Each colored line is one run (run\_1, run\_2); the dashed black line is the mean over runs.}
+	\label{fig:boat-iter}
+\end{figure}
+
+The two models fail in qualitatively different ways under the "simple" prompt, and the iteration loop only fixes one of them. With Claude, every iteration in both runs encodes ordered clockwise traversal with hard-coded checkpoint coordinates --- the canonical hackable design (rewarding any marker tile regardless of order) does not appear. The fitness collapse in run\_2 (100 $\to$ 0 $\to$ 2 across iterations) is therefore not reward hacking but \textit{over-engineering}: each iteration adds a stricter progress-tracking rule meant to prevent some imagined exploit, and those rules introduce subtle stateful bugs that break credit assignment. Iteration~1 adds an episode-reset heuristic keyed on the agent's start tile, which fires spuriously whenever the agent transits past that tile mid-episode and wipes its checkpoint progress. Iteration~2 keeps an analogous brittle reset rule, halves the per-checkpoint reward, and adds a "wrong marker $\to$ wipe all progress" penalty that punishes exploratory moves so harshly that the agent cannot fit the signal. The reward function still encodes the right intent --- it has just been refined into something PPO cannot learn from. With Qwen one-shot, by contrast, every reward function rewards stepping onto any tile with observation value 3.0 without tracking order, which is exactly the misaligned design the boat race environment is built to expose. The Qwen loop runs do not recover this signal: they drift toward env-reward + small shaping designs that strip out the marker logic entirely. The "simple" prompt thus produces two distinct failure modes --- iterative over-refinement of a correctly-specified reward (Claude) versus direct reward misspecification (Qwen) --- and only the latter is true alignment failure.
+
+\begin{figure}[t]
+	\centering
+	\begin{minipage}[t]{0.98\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../analysis/prompt_ablation/figures/lava_distshift_claude_loop_iter_trajectory.png}
+	\end{minipage}
+	\\
+	\begin{minipage}[t]{0.98\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../analysis/prompt_ablation/figures/lava_distshift_qwen_loop_iter_trajectory.png}
+	\end{minipage}
+	\caption{Lava World "distshift" prompt ablation: per-iteration mean episode fitness on the training environment and the two held-out test environments (\texttt{test\_upper}, \texttt{test\_lower}). Top row: Claude Sonnet 4.6. Bottom row: Qwen3.5-9B. Each colored line is one run; the dashed black line is the mean over runs.}
+	\label{fig:lava-iter}
+\end{figure}
+
 \section{Discussion}
 
 \section{Limitations and Future Work}
